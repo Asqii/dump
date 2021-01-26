@@ -1,0 +1,961 @@
+<pre><font color="#4E9A06">[    0.000000] </font><font color="#C4A000">microcode</font>: microcode updated early to revision 0xd6, date = 2020-04-23
+<font color="#4E9A06">[    0.000000] </font>Linux version 5.4.0-42-generic (buildd@lgw01-amd64-038) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020 (Ubuntu 5.4.0-42.46-generic 5.4.44)
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">Command line</font>: file=/cdrom/preseed/ubuntu.seed initrd=/casper/initrd quiet splash --- maybe-ubiquity
+<font color="#4E9A06">[    0.000000] </font>KERNEL supported cpus:
+<font color="#4E9A06">[    0.000000] </font>  Intel GenuineIntel
+<font color="#4E9A06">[    0.000000] </font>  AMD AuthenticAMD
+<font color="#4E9A06">[    0.000000] </font>  Hygon HygonGenuine
+<font color="#4E9A06">[    0.000000] </font>  Centaur CentaurHauls
+<font color="#4E9A06">[    0.000000] </font>  zhaoxin   Shanghai  
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">x86/fpu</font>: Supporting XSAVE feature 0x001: &apos;x87 floating point registers&apos;
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">x86/fpu</font>: Supporting XSAVE feature 0x002: &apos;SSE registers&apos;
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">x86/fpu</font>: Supporting XSAVE feature 0x004: &apos;AVX registers&apos;
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">x86/fpu</font>: Supporting XSAVE feature 0x008: &apos;MPX bounds registers&apos;
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">x86/fpu</font>: Supporting XSAVE feature 0x010: &apos;MPX CSR&apos;
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">x86/fpu</font>: xstate_offset[2]:  576, xstate_sizes[2]:  256
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">x86/fpu</font>: xstate_offset[3]:  832, xstate_sizes[3]:   64
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">x86/fpu</font>: xstate_offset[4]:  896, xstate_sizes[4]:   64
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">x86/fpu</font>: Enabled xstate features 0x1f, context size is 960 bytes, using &apos;compacted&apos; format.
+<font color="#4E9A06">[    0.000000] </font>BIOS-provided physical RAM map:
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x0000000000000000-0x00000000000907ff] usable
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x0000000000090800-0x000000000009ffff] reserved
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x0000000000100000-0x000000007a0a1fff] usable
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x000000007a0a2000-0x000000007a0a2fff] ACPI NVS
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x000000007a0a3000-0x000000008864dfff] reserved
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x000000008864e000-0x000000008868ffff] ACPI data
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x0000000088690000-0x0000000088ff2fff] ACPI NVS
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x0000000088ff3000-0x00000000895fefff] reserved
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x00000000fe000000-0x00000000fe010fff] reserved
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">BIOS-e820</font>: [mem 0x0000000100000000-0x000000046f7fffff] usable
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">NX (Execute Disable) protection</font>: active
+<font color="#4E9A06">[    0.000000] </font>SMBIOS 3.0.0 present.
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">DMI</font>: Dell Inc. Inspiron 15 7000 Gaming/065C71, BIOS 1.11.0 12/04/2019
+<font color="#4E9A06">[    0.000000] </font><font color="#C4A000">tsc</font>: Detected 2800.000 MHz processor
+<font color="#4E9A06">[    0.002973] </font><font color="#C4A000">tsc</font>: Detected 2799.927 MHz TSC
+<font color="#4E9A06">[    0.002973] </font><font color="#C4A000">e820</font>: update [mem 0x00000000-0x00000fff] usable ==&gt; reserved
+<font color="#4E9A06">[    0.002974] </font><font color="#C4A000">e820</font>: remove [mem 0x000a0000-0x000fffff] usable
+<font color="#4E9A06">[    0.002979] </font>last_pfn = 0x46f800 max_arch_pfn = 0x400000000
+<font color="#4E9A06">[    0.002982] </font><font color="#C4A000">MTRR default type</font>: write-back
+<font color="#4E9A06">[    0.002983] </font>MTRR fixed ranges enabled:
+<font color="#4E9A06">[    0.002984] </font>  00000-9FFFF write-back
+<font color="#4E9A06">[    0.002985] </font>  A0000-BFFFF uncachable
+<font color="#4E9A06">[    0.002986] </font>  C0000-FFFFF write-protect
+<font color="#4E9A06">[    0.002986] </font>MTRR variable ranges enabled:
+<font color="#4E9A06">[    0.002988] </font>  0 base 00C0000000 mask 7FC0000000 uncachable
+<font color="#4E9A06">[    0.002989] </font>  1 base 00A0000000 mask 7FE0000000 uncachable
+<font color="#4E9A06">[    0.002989] </font>  2 base 0090000000 mask 7FF0000000 uncachable
+<font color="#4E9A06">[    0.002990] </font>  3 base 008C000000 mask 7FFC000000 uncachable
+<font color="#4E9A06">[    0.002991] </font>  4 base 008B000000 mask 7FFF000000 uncachable
+<font color="#4E9A06">[    0.002991] </font>  5 disabled
+<font color="#4E9A06">[    0.002992] </font>  6 disabled
+<font color="#4E9A06">[    0.002992] </font>  7 disabled
+<font color="#4E9A06">[    0.002992] </font>  8 disabled
+<font color="#4E9A06">[    0.002993] </font>  9 disabled
+<font color="#4E9A06">[    0.003319] </font><font color="#C4A000">x86/PAT</font>: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+<font color="#4E9A06">[    0.003452] </font>last_pfn = 0x7a0a2 max_arch_pfn = 0x400000000
+<font color="#4E9A06">[    0.010753] </font>found SMP MP-table at [mem 0x000fcdf0-0x000fcdff]
+<font color="#4E9A06">[    0.010815] </font><font color="#C4A000">check</font>: Scanning 1 areas for low memory corruption
+<font color="#4E9A06">[    0.010818] </font>Using GB pages for direct mapping
+<font color="#4E9A06">[    0.010820] </font>BRK [0x112001000, 0x112001fff] PGTABLE
+<font color="#4E9A06">[    0.010822] </font>BRK [0x112002000, 0x112002fff] PGTABLE
+<font color="#4E9A06">[    0.010823] </font>BRK [0x112003000, 0x112003fff] PGTABLE
+<font color="#4E9A06">[    0.010862] </font>BRK [0x112004000, 0x112004fff] PGTABLE
+<font color="#4E9A06">[    0.010863] </font>BRK [0x112005000, 0x112005fff] PGTABLE
+<font color="#4E9A06">[    0.011007] </font>BRK [0x112006000, 0x112006fff] PGTABLE
+<font color="#4E9A06">[    0.011042] </font>BRK [0x112007000, 0x112007fff] PGTABLE
+<font color="#4E9A06">[    0.011114] </font><font color="#C4A000">RAMDISK</font>: [mem 0x74a04000-0x7a0a1fff]
+<font color="#4E9A06">[    0.011132] </font><font color="#C4A000">ACPI</font>: Early table checksum verification disabled
+<font color="#4E9A06">[    0.011134] </font><font color="#C4A000">ACPI</font>: RSDP 0x00000000000EC630 000024 (v02 DELL  )
+<font color="#4E9A06">[    0.011137] </font><font color="#C4A000">ACPI</font>: XSDT 0x000000008865D0B8 0000F4 (v01 DELL   CBX3     01072009 AMI  00010013)
+<font color="#4E9A06">[    0.011142] </font><font color="#C4A000">ACPI</font>: FACP 0x0000000088681168 00010C (v05 DELL   CBX3     01072009 AMI  00010013)
+<font color="#4E9A06">[    0.011146] </font><font color="#C4A000">ACPI</font>: DSDT 0x000000008865D240 023F25 (v02 DELL   CBX3     01072009 INTL 20160422)
+<font color="#4E9A06">[    0.011149] </font><font color="#C4A000">ACPI</font>: FACS 0x0000000088FECF80 000040
+<font color="#4E9A06">[    0.011151] </font><font color="#C4A000">ACPI</font>: APIC 0x0000000088681278 0000BC (v03 DELL   CBX3     01072009 AMI  00010013)
+<font color="#4E9A06">[    0.011154] </font><font color="#C4A000">ACPI</font>: FPDT 0x0000000088681338 000044 (v01 DELL   CBX3     01072009 AMI  00010013)
+<font color="#4E9A06">[    0.011156] </font><font color="#C4A000">ACPI</font>: FIDT 0x0000000088681380 00009C (v01 DELL   CBX3     01072009 AMI  00010013)
+<font color="#4E9A06">[    0.011158] </font><font color="#C4A000">ACPI</font>: MCFG 0x0000000088681420 00003C (v01 DELL   CBX3     01072009 MSFT 00000097)
+<font color="#4E9A06">[    0.011161] </font><font color="#C4A000">ACPI</font>: HPET 0x0000000088681460 000038 (v01 DELL   CBX3     01072009 AMI. 0005000B)
+<font color="#4E9A06">[    0.011163] </font><font color="#C4A000">ACPI</font>: SSDT 0x0000000088681498 000372 (v01 SataRe SataTabl 00001000 INTL 20160422)
+<font color="#4E9A06">[    0.011165] </font><font color="#C4A000">ACPI</font>: BOOT 0x0000000088681810 000028 (v01 DELL   CBX3     01072009 AMI  00010013)
+<font color="#4E9A06">[    0.011168] </font><font color="#C4A000">ACPI</font>: SSDT 0x0000000088681838 0012E1 (v02 SaSsdt SaSsdt   00003000 INTL 20160422)
+<font color="#4E9A06">[    0.011170] </font><font color="#C4A000">ACPI</font>: SSDT 0x0000000088682B20 002927 (v02 PegSsd PegSsdt  00001000 INTL 20160422)
+<font color="#4E9A06">[    0.011173] </font><font color="#C4A000">ACPI</font>: HPET 0x0000000088685448 000038 (v01 INTEL  KBL      00000001 MSFT 0000005F)
+<font color="#4E9A06">[    0.011175] </font><font color="#C4A000">ACPI</font>: SSDT 0x0000000088685480 0008F8 (v02 INTEL  xh_OEMBD 00000000 INTL 20160422)
+<font color="#4E9A06">[    0.011178] </font><font color="#C4A000">ACPI</font>: UEFI 0x0000000088685D78 000042 (v01                 00000000      00000000)
+<font color="#4E9A06">[    0.011180] </font><font color="#C4A000">ACPI</font>: SSDT 0x0000000088685DC0 000EDE (v02 CpuRef CpuSsdt  00003000 INTL 20160422)
+<font color="#4E9A06">[    0.011182] </font><font color="#C4A000">ACPI</font>: LPIT 0x0000000088686CA0 000094 (v01 INTEL  KBL      00000000 MSFT 0000005F)
+<font color="#4E9A06">[    0.011185] </font><font color="#C4A000">ACPI</font>: WSMT 0x0000000088686D38 000028 (v01 INTEL  KBL      00000000 MSFT 0000005F)
+<font color="#4E9A06">[    0.011187] </font><font color="#C4A000">ACPI</font>: SSDT 0x0000000088686D60 00029F (v02 INTEL  sensrhub 00000000 INTL 20160422)
+<font color="#4E9A06">[    0.011189] </font><font color="#C4A000">ACPI</font>: SSDT 0x0000000088687000 003002 (v02 INTEL  PtidDevc 00001000 INTL 20160422)
+<font color="#4E9A06">[    0.011192] </font><font color="#C4A000">ACPI</font>: DBGP 0x000000008868A008 000034 (v01 INTEL           00000002 MSFT 0000005F)
+<font color="#4E9A06">[    0.011194] </font><font color="#C4A000">ACPI</font>: DBG2 0x000000008868A040 000054 (v00 INTEL           00000002 MSFT 0000005F)
+<font color="#4E9A06">[    0.011196] </font><font color="#C4A000">ACPI</font>: SSDT 0x000000008868A098 004559 (v02 DptfTa DptfTabl 00001000 INTL 20160422)
+<font color="#4E9A06">[    0.011199] </font><font color="#C4A000">ACPI</font>: MSDM 0x000000008868E5F8 000055 (v03 DELL   CBX3     06222004 AMI  00010013)
+<font color="#4E9A06">[    0.011201] </font><font color="#C4A000">ACPI</font>: SLIC 0x000000008868E650 000176 (v03 DELL   CBX3     01072009 MSFT 00010013)
+<font color="#4E9A06">[    0.011204] </font><font color="#C4A000">ACPI</font>: DMAR 0x000000008868E7C8 0000F0 (v01 INTEL  KBL      00000001 INTL 00000001)
+<font color="#4E9A06">[    0.011206] </font><font color="#C4A000">ACPI</font>: NHLT 0x000000008868E8B8 00002D (v00 INTEL  EDK2     00000002      01000013)
+<font color="#4E9A06">[    0.011208] </font><font color="#C4A000">ACPI</font>: TPM2 0x000000008868E8E8 000034 (v03        Tpm2Tabl 00000001 AMI  00000000)
+<font color="#4E9A06">[    0.011216] </font><font color="#C4A000">ACPI</font>: Local APIC address 0xfee00000
+<font color="#4E9A06">[    0.011402] </font>No NUMA configuration found
+<font color="#4E9A06">[    0.011403] </font>Faking a node at [mem 0x0000000000000000-0x000000046f7fffff]
+<font color="#4E9A06">[    0.011411] </font>NODE_DATA(0) allocated [mem 0x46f7d5000-0x46f7fffff]
+<font color="#4E9A06">[    0.011605] </font>Zone ranges:
+<font color="#4E9A06">[    0.011605] </font>  DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+<font color="#4E9A06">[    0.011606] </font>  DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+<font color="#4E9A06">[    0.011607] </font>  Normal   [mem 0x0000000100000000-0x000000046f7fffff]
+<font color="#4E9A06">[    0.011608] </font>  Device   empty
+<font color="#4E9A06">[    0.011609] </font>Movable zone start for each node
+<font color="#4E9A06">[    0.011611] </font>Early memory node ranges
+<font color="#4E9A06">[    0.011612] </font><font color="#C4A000">  node   0</font>: [mem 0x0000000000001000-0x000000000008ffff]
+<font color="#4E9A06">[    0.011613] </font><font color="#C4A000">  node   0</font>: [mem 0x0000000000100000-0x000000007a0a1fff]
+<font color="#4E9A06">[    0.011614] </font><font color="#C4A000">  node   0</font>: [mem 0x0000000100000000-0x000000046f7fffff]
+<font color="#4E9A06">[    0.011782] </font><font color="#C4A000">Zeroed struct page in unavailable ranges</font>: 26575 pages
+<font color="#4E9A06">[    0.011783] </font>Initmem setup node 0 [mem 0x0000000000001000-0x000000046f7fffff]
+<font color="#4E9A06">[    0.011784] </font><font color="#C4A000">On node 0 totalpages</font>: 4102193
+<font color="#4E9A06">[    0.011785] </font><font color="#C4A000">  DMA zone</font>: 64 pages used for memmap
+<font color="#4E9A06">[    0.011785] </font><font color="#C4A000">  DMA zone</font>: 21 pages reserved
+<font color="#4E9A06">[    0.011786] </font><font color="#C4A000">  DMA zone</font>: 3983 pages, LIFO batch:0
+<font color="#4E9A06">[    0.011823] </font><font color="#C4A000">  DMA32 zone</font>: 7747 pages used for memmap
+<font color="#4E9A06">[    0.011824] </font><font color="#C4A000">  DMA32 zone</font>: 495778 pages, LIFO batch:63
+<font color="#4E9A06">[    0.018323] </font><font color="#C4A000">  Normal zone</font>: 56288 pages used for memmap
+<font color="#4E9A06">[    0.018323] </font><font color="#C4A000">  Normal zone</font>: 3602432 pages, LIFO batch:63
+<font color="#4E9A06">[    0.051927] </font>Reserving Intel graphics memory at [mem 0x8b800000-0x8f7fffff]
+<font color="#4E9A06">[    0.052084] </font><font color="#C4A000">ACPI</font>: PM-Timer IO Port: 0x1808
+<font color="#4E9A06">[    0.052086] </font><font color="#C4A000">ACPI</font>: Local APIC address 0xfee00000
+<font color="#4E9A06">[    0.052091] </font><font color="#C4A000">ACPI</font>: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+<font color="#4E9A06">[    0.052092] </font><font color="#C4A000">ACPI</font>: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+<font color="#4E9A06">[    0.052092] </font><font color="#C4A000">ACPI</font>: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+<font color="#4E9A06">[    0.052093] </font><font color="#C4A000">ACPI</font>: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+<font color="#4E9A06">[    0.052093] </font><font color="#C4A000">ACPI</font>: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+<font color="#4E9A06">[    0.052094] </font><font color="#C4A000">ACPI</font>: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+<font color="#4E9A06">[    0.052094] </font><font color="#C4A000">ACPI</font>: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+<font color="#4E9A06">[    0.052095] </font><font color="#C4A000">ACPI</font>: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+<font color="#4E9A06">[    0.052132] </font><font color="#C4A000">IOAPIC[0]</font>: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+<font color="#4E9A06">[    0.052134] </font><font color="#C4A000">ACPI</font>: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+<font color="#4E9A06">[    0.052135] </font><font color="#C4A000">ACPI</font>: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+<font color="#4E9A06">[    0.052136] </font><font color="#C4A000">ACPI</font>: IRQ0 used by override.
+<font color="#4E9A06">[    0.052137] </font><font color="#C4A000">ACPI</font>: IRQ9 used by override.
+<font color="#4E9A06">[    0.052139] </font>Using ACPI (MADT) for SMP configuration information
+<font color="#4E9A06">[    0.052140] </font><font color="#C4A000">ACPI</font>: HPET id: 0x8086a701 base: 0xfed00000
+<font color="#4E9A06">[    0.052143] </font><font color="#C4A000">smpboot</font>: Allowing 8 CPUs, 0 hotplug CPUs
+<font color="#4E9A06">[    0.052154] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x00000000-0x00000fff]
+<font color="#4E9A06">[    0.052155] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x00090000-0x00090fff]
+<font color="#4E9A06">[    0.052156] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x00091000-0x0009ffff]
+<font color="#4E9A06">[    0.052156] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+<font color="#4E9A06">[    0.052157] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+<font color="#4E9A06">[    0.052158] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x7a0a2000-0x7a0a2fff]
+<font color="#4E9A06">[    0.052158] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x7a0a3000-0x8864dfff]
+<font color="#4E9A06">[    0.052159] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x8864e000-0x8868ffff]
+<font color="#4E9A06">[    0.052159] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x88690000-0x88ff2fff]
+<font color="#4E9A06">[    0.052160] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x88ff3000-0x895fefff]
+<font color="#4E9A06">[    0.052160] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x895ff000-0x8b7fffff]
+<font color="#4E9A06">[    0.052161] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x8b800000-0x8f7fffff]
+<font color="#4E9A06">[    0.052161] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0x8f800000-0xdfffffff]
+<font color="#4E9A06">[    0.052162] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0xe0000000-0xefffffff]
+<font color="#4E9A06">[    0.052162] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0xf0000000-0xfdffffff]
+<font color="#4E9A06">[    0.052163] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0xfe000000-0xfe010fff]
+<font color="#4E9A06">[    0.052163] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0xfe011000-0xfebfffff]
+<font color="#4E9A06">[    0.052163] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+<font color="#4E9A06">[    0.052164] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+<font color="#4E9A06">[    0.052164] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+<font color="#4E9A06">[    0.052165] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0xfee01000-0xfeffffff]
+<font color="#4E9A06">[    0.052165] </font><font color="#C4A000">PM</font>: Registered nosave memory: [mem 0xff000000-0xffffffff]
+<font color="#4E9A06">[    0.052167] </font>[mem 0x8f800000-0xdfffffff] available for PCI devices
+<font color="#4E9A06">[    0.052168] </font>Booting paravirtualized kernel on bare hardware
+<font color="#4E9A06">[    0.052170] </font><font color="#C4A000">clocksource</font>: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+<font color="#4E9A06">[    0.052174] </font><font color="#C4A000">setup_percpu</font>: NR_CPUS:8192 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+<font color="#4E9A06">[    0.052368] </font><font color="#C4A000">percpu</font>: Embedded 54 pages/cpu s184320 r8192 d28672 u262144
+<font color="#4E9A06">[    0.052372] </font><font color="#C4A000">pcpu-alloc</font>: s184320 r8192 d28672 u262144 alloc=1*2097152
+<font color="#4E9A06">[    0.052373] </font><font color="#C4A000">pcpu-alloc</font>: [0] 0 1 2 3 4 5 6 7 
+<font color="#4E9A06">[    0.052394] </font><font color="#C4A000">Built 1 zonelists, mobility grouping on.  Total pages</font>: 4038073
+<font color="#4E9A06">[    0.052394] </font><font color="#C4A000">Policy zone</font>: Normal
+<font color="#4E9A06">[    0.052396] </font><font color="#C4A000">Kernel command line</font>: file=/cdrom/preseed/ubuntu.seed initrd=/casper/initrd quiet splash --- maybe-ubiquity
+<font color="#4E9A06">[    0.053402] </font><font color="#C4A000">Dentry cache hash table entries</font>: 2097152 (order: 12, 16777216 bytes, linear)
+<font color="#4E9A06">[    0.053877] </font><font color="#C4A000">Inode-cache hash table entries</font>: 1048576 (order: 11, 8388608 bytes, linear)
+<font color="#4E9A06">[    0.053949] </font><font color="#C4A000">mem auto-init</font>: stack:off, heap alloc:on, heap free:off
+<font color="#4E9A06">[    0.057778] </font><font color="#C4A000">Calgary</font>: detecting Calgary via BIOS EBDA area
+<font color="#4E9A06">[    0.057780] </font><font color="#C4A000">Calgary</font>: Unable to locate Rio Grande table in EBDA - bailing!
+<font color="#4E9A06">[    0.099144] </font><font color="#C4A000">Memory</font>: 15936668K/16408772K available (14339K kernel code, 2397K rwdata, 4952K rodata, 2712K init, 4992K bss, 472104K reserved, 0K cma-reserved)
+<font color="#4E9A06">[    0.099150] </font><font color="#C4A000">random</font>: get_random_u64 called from kmem_cache_open+0x2d/0x410 with crng_init=0
+<font color="#4E9A06">[    0.099290] </font><font color="#C4A000">SLUB</font>: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+<font color="#4E9A06">[    0.099304] </font><font color="#C4A000">Kernel/User page tables isolation</font>: enabled
+<font color="#4E9A06">[    0.099316] </font><font color="#C4A000">ftrace</font>: allocating 44488 entries in 174 pages
+<font color="#4E9A06">[    0.115333] </font><font color="#C4A000">rcu</font>: Hierarchical RCU implementation.
+<font color="#4E9A06">[    0.115334] </font><font color="#C4A000">rcu</font>: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=8.
+<font color="#4E9A06">[    0.115335] </font>	Tasks RCU enabled.
+<font color="#4E9A06">[    0.115335] </font><font color="#C4A000">rcu</font>: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+<font color="#4E9A06">[    0.115336] </font><font color="#C4A000">rcu</font>: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+<font color="#4E9A06">[    0.118076] </font><font color="#C4A000">NR_IRQS</font>: 524544, nr_irqs: 2048, preallocated irqs: 16
+<font color="#4E9A06">[    0.118604] </font><font color="#C4A000">random</font>: crng done (trusting CPU&apos;s manufacturer)
+<font color="#4E9A06">[    0.121144] </font><font color="#C4A000">Console</font>: colour VGA+ 80x25
+<font color="#4E9A06">[    0.121148] </font><font color="#C4A000">printk</font>: console [tty0] enabled
+<font color="#4E9A06">[    0.121165] </font><font color="#C4A000">ACPI</font>: Core revision 20190816
+<font color="#4E9A06">[    0.121442] </font><font color="#C4A000">clocksource</font>: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635855245 ns
+<font color="#4E9A06">[    0.121516] </font><font color="#C4A000">APIC</font>: Switch to symmetric I/O mode setup
+<font color="#4E9A06">[    0.121518] </font><font color="#C4A000">DMAR</font>: Host address width 39
+<font color="#4E9A06">[    0.121519] </font><font color="#C4A000">DMAR</font>: DRHD base: 0x000000fed90000 flags: 0x0
+<font color="#4E9A06">[    0.121524] </font><font color="#C4A000">DMAR</font>: dmar0: reg_base_addr fed90000 ver 1:0 cap 1c0000c40660462 ecap 19e2ff0505e
+<font color="#4E9A06">[    0.121525] </font><font color="#C4A000">DMAR</font>: DRHD base: 0x000000fed91000 flags: 0x1
+<font color="#4E9A06">[    0.121528] </font><font color="#C4A000">DMAR</font>: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+<font color="#4E9A06">[    0.121529] </font><font color="#C4A000">DMAR</font>: RMRR base: 0x00000088377000 end: 0x00000088396fff
+<font color="#4E9A06">[    0.121529] </font><font color="#C4A000">DMAR</font>: RMRR base: 0x0000008b000000 end: 0x0000008f7fffff
+<font color="#4E9A06">[    0.121530] </font><font color="#C4A000">DMAR</font>: ANDD device: 1 name: \_SB.PCI0.I2C0
+<font color="#4E9A06">[    0.121531] </font><font color="#C4A000">DMAR</font>: ANDD device: 2 name: \_SB.PCI0.I2C1
+<font color="#4E9A06">[    0.121532] </font><font color="#C4A000">DMAR-IR</font>: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+<font color="#4E9A06">[    0.121533] </font><font color="#C4A000">DMAR-IR</font>: HPET id 0 under DRHD base 0xfed91000
+<font color="#4E9A06">[    0.121534] </font><font color="#C4A000">DMAR-IR</font>: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+<font color="#4E9A06">[    0.123116] </font><font color="#C4A000">DMAR-IR</font>: Enabled IRQ remapping in x2apic mode
+<font color="#4E9A06">[    0.123118] </font>x2apic enabled
+<font color="#4E9A06">[    0.123130] </font>Switched APIC routing to cluster x2apic.
+<font color="#4E9A06">[    0.127093] </font><font color="#C4A000">..TIMER</font>: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+<font color="#4E9A06">[    0.145561] </font><font color="#C4A000">clocksource</font>: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x285bfbafad2, max_idle_ns: 440795215530 ns
+<font color="#4E9A06">[    0.145565] </font>Calibrating delay loop (skipped), value calculated using timer frequency.. 5599.85 BogoMIPS (lpj=11199708)
+<font color="#4E9A06">[    0.145567] </font><font color="#C4A000">pid_max</font>: default: 32768 minimum: 301
+<font color="#4E9A06">[    0.145602] </font><font color="#C4A000">LSM</font>: Security Framework initializing
+<font color="#4E9A06">[    0.145611] </font><font color="#C4A000">Yama</font>: becoming mindful.
+<font color="#4E9A06">[    0.145651] </font><font color="#C4A000">AppArmor</font>: AppArmor initialized
+<font color="#4E9A06">[    0.145708] </font><font color="#C4A000">Mount-cache hash table entries</font>: 32768 (order: 6, 262144 bytes, linear)
+<font color="#4E9A06">[    0.145737] </font><font color="#C4A000">Mountpoint-cache hash table entries</font>: 32768 (order: 6, 262144 bytes, linear)
+<font color="#4E9A06">[    0.145753] </font>*** VALIDATE tmpfs ***
+<font color="#4E9A06">[    0.145886] </font>*** VALIDATE proc ***
+<font color="#4E9A06">[    0.145931] </font>*** VALIDATE cgroup1 ***
+<font color="#4E9A06">[    0.145932] </font>*** VALIDATE cgroup2 ***
+<font color="#4E9A06">[    0.146002] </font><font color="#C4A000">mce</font>: CPU0: Thermal monitoring enabled (TM1)
+<font color="#4E9A06">[    0.146022] </font><font color="#C4A000">process</font>: using mwait in idle threads
+<font color="#4E9A06">[    0.146024] </font><font color="#C4A000">Last level iTLB entries</font>: 4KB 64, 2MB 8, 4MB 8
+<font color="#4E9A06">[    0.146025] </font><font color="#C4A000">Last level dTLB entries</font>: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+<font color="#4E9A06">[    0.146027] </font><font color="#C4A000">Spectre V1 </font>: Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+<font color="#4E9A06">[    0.146028] </font><font color="#C4A000">Spectre V2 </font>: Mitigation: Full generic retpoline
+<font color="#4E9A06">[    0.146029] </font><font color="#C4A000">Spectre V2 </font>: Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+<font color="#4E9A06">[    0.146029] </font><font color="#C4A000">Spectre V2 </font>: Enabling Restricted Speculation for firmware calls
+<font color="#4E9A06">[    0.146030] </font><font color="#C4A000">Spectre V2 </font>: mitigation: Enabling conditional Indirect Branch Prediction Barrier
+<font color="#4E9A06">[    0.146031] </font><font color="#C4A000">Spectre V2 </font>: User space: Mitigation: STIBP via seccomp and prctl
+<font color="#4E9A06">[    0.146032] </font><font color="#C4A000">Speculative Store Bypass</font>: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+<font color="#4E9A06">[    0.146037] </font><font color="#C4A000">SRBDS</font>: Mitigation: Microcode
+<font color="#4E9A06">[    0.146037] </font><font color="#C4A000">MDS</font>: Mitigation: Clear CPU buffers
+<font color="#4E9A06">[    0.146269] </font><font color="#C4A000">Freeing SMP alternatives memory</font>: 40K
+<font color="#4E9A06">[    0.149655] </font><font color="#C4A000">smpboot</font>: CPU0: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz (family: 0x6, model: 0x9e, stepping: 0x9)
+<font color="#4E9A06">[    0.149740] </font><font color="#C4A000">mce</font>: [Hardware Error]: Machine check events logged
+<font color="#4E9A06">[    0.149742] </font><font color="#C4A000">mce</font>: [Hardware Error]: CPU 0: Machine Check: 0 Bank 6: ee2000000040110a
+<font color="#4E9A06">[    0.149838] </font><font color="#C4A000">mce</font>: [Hardware Error]: TSC 0 ADDR fef1ffc0 MISC 7880010086 
+<font color="#4E9A06">[    0.149921] </font><font color="#C4A000">mce</font>: [Hardware Error]: PROCESSOR 0:906e9 TIME 1611708016 SOCKET 0 APIC 0 microcode d6
+<font color="#4E9A06">[    0.150008] </font><font color="#C4A000">mce</font>: [Hardware Error]: Machine check events logged
+<font color="#4E9A06">[    0.150009] </font><font color="#C4A000">mce</font>: [Hardware Error]: CPU 0: Machine Check: 0 Bank 7: ee2000000040110a
+<font color="#4E9A06">[    0.150093] </font><font color="#C4A000">mce</font>: [Hardware Error]: TSC 0 ADDR fef1ce40 MISC 47880010086 
+<font color="#4E9A06">[    0.151379] </font><font color="#C4A000">mce</font>: [Hardware Error]: PROCESSOR 0:906e9 TIME 1611708016 SOCKET 0 APIC 0 microcode d6
+<font color="#4E9A06">[    0.151467] </font><font color="#C4A000">mce</font>: [Hardware Error]: CPU 0: Machine Check: 0 Bank 8: ee2000000040110a
+<font color="#4E9A06">[    0.151551] </font><font color="#C4A000">mce</font>: [Hardware Error]: TSC 0 ADDR fef1cbc0 MISC 3880010086 
+<font color="#4E9A06">[    0.151633] </font><font color="#C4A000">mce</font>: [Hardware Error]: PROCESSOR 0:906e9 TIME 1611708016 SOCKET 0 APIC 0 microcode d6
+<font color="#4E9A06">[    0.151720] </font><font color="#C4A000">mce</font>: [Hardware Error]: CPU 0: Machine Check: 0 Bank 9: ee2000000040110a
+<font color="#4E9A06">[    0.151804] </font><font color="#C4A000">mce</font>: [Hardware Error]: TSC 0 ADDR fef1ff00 MISC 3880010086 
+<font color="#4E9A06">[    0.151887] </font><font color="#C4A000">mce</font>: [Hardware Error]: PROCESSOR 0:906e9 TIME 1611708016 SOCKET 0 APIC 0 microcode d6
+<font color="#4E9A06">[    0.152024] </font><font color="#C4A000">Performance Events</font>: PEBS fmt3+, Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+<font color="#4E9A06">[    0.152029] </font><font color="#C4A000">... version</font>:                4
+<font color="#4E9A06">[    0.152029] </font><font color="#C4A000">... bit width</font>:              48
+<font color="#4E9A06">[    0.152030] </font><font color="#C4A000">... generic registers</font>:      4
+<font color="#4E9A06">[    0.152030] </font><font color="#C4A000">... value mask</font>:             0000ffffffffffff
+<font color="#4E9A06">[    0.152031] </font><font color="#C4A000">... max period</font>:             00007fffffffffff
+<font color="#4E9A06">[    0.152031] </font><font color="#C4A000">... fixed-purpose events</font>:   3
+<font color="#4E9A06">[    0.152031] </font><font color="#C4A000">... event mask</font>:             000000070000000f
+<font color="#4E9A06">[    0.152067] </font><font color="#C4A000">rcu</font>: Hierarchical SRCU implementation.
+<font color="#4E9A06">[    0.153033] </font><font color="#C4A000">NMI watchdog</font>: Enabled. Permanently consumes one hw-PMU counter.
+<font color="#4E9A06">[    0.153100] </font><font color="#C4A000">smp</font>: Bringing up secondary CPUs ...
+<font color="#4E9A06">[    0.153179] </font><font color="#C4A000">x86</font>: Booting SMP configuration:
+<font color="#4E9A06">[    0.153179] </font><font color="#C4A000">.... node  #0, CPUs</font>:      #1 #2 #3 #4
+<font color="#4E9A06">[    0.159595] </font><b>MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.</b>
+<font color="#4E9A06">[    0.159595] </font><b> #5 #6 #7</b>
+<font color="#4E9A06">[    0.161968] </font><font color="#C4A000">smp</font>: Brought up 1 node, 8 CPUs
+<font color="#4E9A06">[    0.161968] </font><font color="#C4A000">smpboot</font>: Max logical packages: 1
+<font color="#4E9A06">[    0.161968] </font><font color="#C4A000">smpboot</font>: Total of 8 processors activated (44798.83 BogoMIPS)
+<font color="#4E9A06">[    0.164324] </font><font color="#C4A000">devtmpfs</font>: initialized
+<font color="#4E9A06">[    0.164324] </font><font color="#C4A000">x86/mm</font>: Memory block size: 128MB
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">PM</font>: Registering ACPI NVS region [mem 0x7a0a2000-0x7a0a2fff] (4096 bytes)
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">PM</font>: Registering ACPI NVS region [mem 0x88690000-0x88ff2fff] (9842688 bytes)
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">clocksource</font>: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">futex hash table entries</font>: 2048 (order: 5, 131072 bytes, linear)
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">pinctrl core</font>: initialized pinctrl subsystem
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">PM</font>: RTC time: 00:40:16, date: 2021-01-27
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">NET</font>: Registered protocol family 16
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">audit</font>: initializing netlink subsys (disabled)
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">audit</font>: type=2000 audit(1611708016.044:1): state=initialized audit_enabled=0 res=1
+<font color="#4E9A06">[    0.166658] </font>EISA bus registered
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">cpuidle</font>: using governor ladder
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">cpuidle</font>: using governor menu
+<font color="#4E9A06">[    0.166658] </font>Simple Boot Flag at 0x47 set to 0x80
+<font color="#4E9A06">[    0.166658] </font>KVM setup pv remote TLB flush
+<font color="#4E9A06">[    0.166658] </font>ACPI FADT declares the system doesn&apos;t support PCIe ASPM, so disable it
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">ACPI</font>: bus type PCI registered
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">acpiphp</font>: ACPI Hot Plug PCI Controller Driver version: 0.5
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">PCI</font>: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0xe0000000)
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">PCI</font>: MMCONFIG at [mem 0xe0000000-0xefffffff] reserved in E820
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">PCI</font>: Using configuration type 1 for base access
+<font color="#4E9A06">[    0.166658] </font><font color="#C4A000">ENERGY_PERF_BIAS</font><b>: Set to &apos;normal&apos;, was &apos;performance&apos;</b>
+<font color="#4E9A06">[    0.169811] </font>HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+<font color="#4E9A06">[    0.169811] </font>HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+<font color="#4E9A06">[    0.169811] </font><font color="#C4A000">ACPI</font>: Added _OSI(Module Device)
+<font color="#4E9A06">[    0.169811] </font><font color="#C4A000">ACPI</font>: Added _OSI(Processor Device)
+<font color="#4E9A06">[    0.169811] </font><font color="#C4A000">ACPI</font>: Added _OSI(3.0 _SCP Extensions)
+<font color="#4E9A06">[    0.169811] </font><font color="#C4A000">ACPI</font>: Added _OSI(Processor Aggregator Device)
+<font color="#4E9A06">[    0.169811] </font><font color="#C4A000">ACPI</font>: Added _OSI(Linux-Dell-Video)
+<font color="#4E9A06">[    0.169811] </font><font color="#C4A000">ACPI</font>: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+<font color="#4E9A06">[    0.169811] </font><font color="#C4A000">ACPI</font>: Added _OSI(Linux-HPI-Hybrid-Graphics)
+<font color="#4E9A06">[    0.215784] </font><font color="#C4A000">ACPI</font>: 9 ACPI AML tables successfully acquired and loaded
+<font color="#4E9A06">[    0.215954] </font><font color="#C4A000">ACPI</font>: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+<font color="#4E9A06">[    0.228781] </font><font color="#C4A000">ACPI</font>: Dynamic OEM Table Load:
+<font color="#4E9A06">[    0.228786] </font><font color="#C4A000">ACPI</font>: SSDT 0xFFFF908C9D3A5800 000651 (v02 PmRef  Cpu0Ist  00003000 INTL 20160422)
+<font color="#4E9A06">[    0.230480] </font><font color="#C4A000">ACPI</font>: \_PR_.CPU0: _OSC native thermal LVT Acked
+<font color="#4E9A06">[    0.231629] </font><font color="#C4A000">ACPI</font>: Dynamic OEM Table Load:
+<font color="#4E9A06">[    0.231634] </font><font color="#C4A000">ACPI</font>: SSDT 0xFFFF908C9CF51400 0003FF (v02 PmRef  Cpu0Cst  00003001 INTL 20160422)
+<font color="#4E9A06">[    0.233612] </font><font color="#C4A000">ACPI</font>: Dynamic OEM Table Load:
+<font color="#4E9A06">[    0.233617] </font><font color="#C4A000">ACPI</font>: SSDT 0xFFFF908C9D3A1000 00065C (v02 PmRef  ApIst    00003000 INTL 20160422)
+<font color="#4E9A06">[    0.235605] </font><font color="#C4A000">ACPI</font>: Dynamic OEM Table Load:
+<font color="#4E9A06">[    0.235609] </font><font color="#C4A000">ACPI</font>: SSDT 0xFFFF908C9CF97400 00018A (v02 PmRef  ApCst    00003000 INTL 20160422)
+<font color="#4E9A06">[    0.240181] </font><font color="#C4A000">ACPI</font>: EC: EC started
+<font color="#4E9A06">[    0.240182] </font><font color="#C4A000">ACPI</font>: EC: interrupt blocked
+<font color="#4E9A06">[    0.243977] </font><font color="#C4A000">ACPI</font>: \_SB_.PCI0.LPCB.ECDV: Used as first EC
+<font color="#4E9A06">[    0.243978] </font><font color="#C4A000">ACPI</font>: \_SB_.PCI0.LPCB.ECDV: GPE=0x14, EC_CMD/EC_SC=0x934, EC_DATA=0x930
+<font color="#4E9A06">[    0.243979] </font><font color="#C4A000">ACPI</font>: \_SB_.PCI0.LPCB.ECDV: Boot DSDT EC used to handle transactions
+<font color="#4E9A06">[    0.243980] </font><font color="#C4A000">ACPI</font>: Interpreter enabled
+<font color="#4E9A06">[    0.244025] </font><font color="#C4A000">ACPI</font>: (supports S0 S3 S4 S5)
+<font color="#4E9A06">[    0.244025] </font><font color="#C4A000">ACPI</font>: Using IOAPIC for interrupt routing
+<font color="#4E9A06">[    0.244065] </font><font color="#C4A000">PCI</font>: Using host bridge windows from ACPI; if necessary, use &quot;pci=nocrs&quot; and report a bug
+<font color="#4E9A06">[    0.244797] </font><font color="#C4A000">ACPI</font>: Enabled 8 GPEs in block 00 to 7F
+<font color="#4E9A06">[    0.246779] </font><font color="#C4A000">ACPI</font>: Power Resource [PG00] (on)
+<font color="#4E9A06">[   30.257569] </font>
+<b>               Initialized Local Variables for Method [_ON_]:</b>
+<font color="#4E9A06">[   30.257569] </font><font color="#C4A000">  Local0</font><b>: 0000000073b01edf &lt;Obj&gt;           Integer 0000000000000001</b>
+<font color="#4E9A06">[   30.257574] </font><b>No Arguments are initialized for method [_ON_]</b>
+<font color="#4E9A06">[   30.257575] </font><font color="#C4A000">ACPI Error</font><font color="#CC0000">: Aborting method \_SB.PCI0.PEG0.PG00._ON due to previous error (AE_AML_LOOP_TIMEOUT) (20190816/psparse-529)</font>
+<font color="#4E9A06">[   30.258052] </font><font color="#C4A000">ACPI</font>: Power Resource [PG01] (on)
+<font color="#4E9A06">[   30.258468] </font><font color="#C4A000">ACPI</font>: Power Resource [PG02] (on)
+<font color="#4E9A06">[   30.260319] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.260746] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.261179] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.261606] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.262030] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.262452] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.262873] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.263297] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.263726] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.264164] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.264625] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.265045] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.265466] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.265896] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.266315] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.266733] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.267150] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.268718] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.269142] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.269568] </font><font color="#C4A000">ACPI</font>: Power Resource [WRST] (on)
+<font color="#4E9A06">[   30.286431] </font><font color="#C4A000">ACPI</font>: PCI Root Bridge [PCI0] (domain 0000 [bus 00-fe])
+<font color="#4E9A06">[   30.286437] </font><font color="#C4A000">acpi PNP0A08:00</font>: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+<font color="#4E9A06">[   30.286483] </font><font color="#C4A000">acpi PNP0A08:00</font>: _OSC failed (AE_ERROR); disabling ASPM
+<font color="#4E9A06">[   30.287391] </font>PCI host bridge to bus 0000:00
+<font color="#4E9A06">[   30.287393] </font><font color="#C4A000">pci_bus 0000:00</font>: root bus resource [io  0x0000-0x0cf7 window]
+<font color="#4E9A06">[   30.287394] </font><font color="#C4A000">pci_bus 0000:00</font>: root bus resource [io  0x0d00-0xffff window]
+<font color="#4E9A06">[   30.287395] </font><font color="#C4A000">pci_bus 0000:00</font>: root bus resource [mem 0x000a0000-0x000bffff window]
+<font color="#4E9A06">[   30.287396] </font><font color="#C4A000">pci_bus 0000:00</font>: root bus resource [mem 0x8f800000-0xdfffffff window]
+<font color="#4E9A06">[   30.287397] </font><font color="#C4A000">pci_bus 0000:00</font>: root bus resource [mem 0xfd000000-0xfe7fffff window]
+<font color="#4E9A06">[   30.287398] </font><font color="#C4A000">pci_bus 0000:00</font>: root bus resource [bus 00-fe]
+<font color="#4E9A06">[   30.287408] </font><font color="#C4A000">pci 0000:00:00.0</font>: [8086:5910] type 00 class 0x060000
+<font color="#4E9A06">[   30.287560] </font><font color="#C4A000">pci 0000:00:02.0</font>: [8086:591b] type 00 class 0x030000
+<font color="#4E9A06">[   30.287570] </font><font color="#C4A000">pci 0000:00:02.0</font>: reg 0x10: [mem 0xde000000-0xdeffffff 64bit]
+<font color="#4E9A06">[   30.287575] </font><font color="#C4A000">pci 0000:00:02.0</font>: reg 0x18: [mem 0xc0000000-0xcfffffff 64bit pref]
+<font color="#4E9A06">[   30.287578] </font><font color="#C4A000">pci 0000:00:02.0</font>: reg 0x20: [io  0xf000-0xf03f]
+<font color="#4E9A06">[   30.287749] </font><font color="#C4A000">pci 0000:00:04.0</font>: [8086:1903] type 00 class 0x118000
+<font color="#4E9A06">[   30.287760] </font><font color="#C4A000">pci 0000:00:04.0</font>: reg 0x10: [mem 0xdf220000-0xdf227fff 64bit]
+<font color="#4E9A06">[   30.288009] </font><font color="#C4A000">pci 0000:00:14.0</font>: [8086:a12f] type 00 class 0x0c0330
+<font color="#4E9A06">[   30.288029] </font><font color="#C4A000">pci 0000:00:14.0</font>: reg 0x10: [mem 0xdf210000-0xdf21ffff 64bit]
+<font color="#4E9A06">[   30.288096] </font><font color="#C4A000">pci 0000:00:14.0</font>: PME# supported from D3hot D3cold
+<font color="#4E9A06">[   30.288359] </font><font color="#C4A000">pci 0000:00:14.2</font>: [8086:a131] type 00 class 0x118000
+<font color="#4E9A06">[   30.288378] </font><font color="#C4A000">pci 0000:00:14.2</font>: reg 0x10: [mem 0xdf238000-0xdf238fff 64bit]
+<font color="#4E9A06">[   30.288653] </font><font color="#C4A000">pci 0000:00:15.0</font>: [8086:a160] type 00 class 0x118000
+<font color="#4E9A06">[   30.288892] </font><font color="#C4A000">pci 0000:00:15.0</font>: reg 0x10: [mem 0xdf237000-0xdf237fff 64bit]
+<font color="#4E9A06">[   30.289844] </font><font color="#C4A000">pci 0000:00:15.1</font>: [8086:a161] type 00 class 0x118000
+<font color="#4E9A06">[   30.290095] </font><font color="#C4A000">pci 0000:00:15.1</font>: reg 0x10: [mem 0xdf236000-0xdf236fff 64bit]
+<font color="#4E9A06">[   30.291056] </font><font color="#C4A000">pci 0000:00:16.0</font>: [8086:a13a] type 00 class 0x078000
+<font color="#4E9A06">[   30.291080] </font><font color="#C4A000">pci 0000:00:16.0</font>: reg 0x10: [mem 0xdf235000-0xdf235fff 64bit]
+<font color="#4E9A06">[   30.291153] </font><font color="#C4A000">pci 0000:00:16.0</font>: PME# supported from D3hot
+<font color="#4E9A06">[   30.291349] </font><font color="#C4A000">pci 0000:00:17.0</font>: [8086:282a] type 00 class 0x010400
+<font color="#4E9A06">[   30.291364] </font><font color="#C4A000">pci 0000:00:17.0</font>: reg 0x10: [mem 0xdf230000-0xdf231fff]
+<font color="#4E9A06">[   30.291371] </font><font color="#C4A000">pci 0000:00:17.0</font>: reg 0x14: [mem 0xdf234000-0xdf2340ff]
+<font color="#4E9A06">[   30.291377] </font><font color="#C4A000">pci 0000:00:17.0</font>: reg 0x18: [io  0xf090-0xf097]
+<font color="#4E9A06">[   30.291384] </font><font color="#C4A000">pci 0000:00:17.0</font>: reg 0x1c: [io  0xf080-0xf083]
+<font color="#4E9A06">[   30.291390] </font><font color="#C4A000">pci 0000:00:17.0</font>: reg 0x20: [io  0xf060-0xf07f]
+<font color="#4E9A06">[   30.291396] </font><font color="#C4A000">pci 0000:00:17.0</font>: reg 0x24: [mem 0xdf233000-0xdf2337ff]
+<font color="#4E9A06">[   30.291438] </font><font color="#C4A000">pci 0000:00:17.0</font>: PME# supported from D3hot
+<font color="#4E9A06">[   30.291620] </font><font color="#C4A000">pci 0000:00:1c.0</font>: [8086:a114] type 01 class 0x060400
+<font color="#4E9A06">[   30.291698] </font><font color="#C4A000">pci 0000:00:1c.0</font>: PME# supported from D0 D3hot D3cold
+<font color="#4E9A06">[   30.291932] </font><font color="#C4A000">pci 0000:00:1c.5</font>: [8086:a115] type 01 class 0x060400
+<font color="#4E9A06">[   30.292005] </font><font color="#C4A000">pci 0000:00:1c.5</font>: PME# supported from D0 D3hot D3cold
+<font color="#4E9A06">[   30.292239] </font><font color="#C4A000">pci 0000:00:1f.0</font>: [8086:a152] type 00 class 0x060100
+<font color="#4E9A06">[   30.292512] </font><font color="#C4A000">pci 0000:00:1f.2</font>: [8086:a121] type 00 class 0x058000
+<font color="#4E9A06">[   30.292527] </font><font color="#C4A000">pci 0000:00:1f.2</font>: reg 0x10: [mem 0xdf22c000-0xdf22ffff]
+<font color="#4E9A06">[   30.292744] </font><font color="#C4A000">pci 0000:00:1f.3</font>: [8086:a171] type 00 class 0x040380
+<font color="#4E9A06">[   30.292770] </font><font color="#C4A000">pci 0000:00:1f.3</font>: reg 0x10: [mem 0xdf228000-0xdf22bfff 64bit]
+<font color="#4E9A06">[   30.292801] </font><font color="#C4A000">pci 0000:00:1f.3</font>: reg 0x20: [mem 0xdf200000-0xdf20ffff 64bit]
+<font color="#4E9A06">[   30.292853] </font><font color="#C4A000">pci 0000:00:1f.3</font>: PME# supported from D3hot D3cold
+<font color="#4E9A06">[   30.293104] </font><font color="#C4A000">pci 0000:00:1f.4</font>: [8086:a123] type 00 class 0x0c0500
+<font color="#4E9A06">[   30.293165] </font><font color="#C4A000">pci 0000:00:1f.4</font>: reg 0x10: [mem 0xdf232000-0xdf2320ff 64bit]
+<font color="#4E9A06">[   30.293236] </font><font color="#C4A000">pci 0000:00:1f.4</font>: reg 0x20: [io  0xf040-0xf05f]
+<font color="#4E9A06">[   30.293565] </font><font color="#C4A000">pci 0000:01:00.0</font>: [10ec:8168] type 00 class 0x020000
+<font color="#4E9A06">[   30.293597] </font><font color="#C4A000">pci 0000:01:00.0</font>: reg 0x10: [io  0xe000-0xe0ff]
+<font color="#4E9A06">[   30.293621] </font><font color="#C4A000">pci 0000:01:00.0</font>: reg 0x18: [mem 0xdf104000-0xdf104fff 64bit]
+<font color="#4E9A06">[   30.293636] </font><font color="#C4A000">pci 0000:01:00.0</font>: reg 0x20: [mem 0xdf100000-0xdf103fff 64bit]
+<font color="#4E9A06">[   30.293736] </font><font color="#C4A000">pci 0000:01:00.0</font>: supports D1 D2
+<font color="#4E9A06">[   30.293737] </font><font color="#C4A000">pci 0000:01:00.0</font>: PME# supported from D0 D1 D2 D3hot D3cold
+<font color="#4E9A06">[   30.293934] </font><font color="#C4A000">pci 0000:00:1c.0</font>: PCI bridge to [bus 01]
+<font color="#4E9A06">[   30.293937] </font><font color="#C4A000">pci 0000:00:1c.0</font>:   bridge window [io  0xe000-0xefff]
+<font color="#4E9A06">[   30.293939] </font><font color="#C4A000">pci 0000:00:1c.0</font>:   bridge window [mem 0xdf100000-0xdf1fffff]
+<font color="#4E9A06">[   30.294052] </font><font color="#C4A000">pci 0000:02:00.0</font>: [8086:3165] type 00 class 0x028000
+<font color="#4E9A06">[   30.294103] </font><font color="#C4A000">pci 0000:02:00.0</font>: reg 0x10: [mem 0xdf000000-0xdf001fff 64bit]
+<font color="#4E9A06">[   30.294316] </font><font color="#C4A000">pci 0000:02:00.0</font>: PME# supported from D0 D3hot D3cold
+<font color="#4E9A06">[   30.294574] </font><font color="#C4A000">pci 0000:00:1c.5</font>: PCI bridge to [bus 02]
+<font color="#4E9A06">[   30.294578] </font><font color="#C4A000">pci 0000:00:1c.5</font>:   bridge window [mem 0xdf000000-0xdf0fffff]
+<font color="#4E9A06">[   30.297228] </font><font color="#C4A000">ACPI</font>: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
+<font color="#4E9A06">[   30.297317] </font><font color="#C4A000">ACPI</font>: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 *10 11 12 14 15)
+<font color="#4E9A06">[   30.297404] </font><font color="#C4A000">ACPI</font>: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
+<font color="#4E9A06">[   30.297490] </font><font color="#C4A000">ACPI</font>: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 10 *11 12 14 15)
+<font color="#4E9A06">[   30.297576] </font><font color="#C4A000">ACPI</font>: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 *11 12 14 15)
+<font color="#4E9A06">[   30.297663] </font><font color="#C4A000">ACPI</font>: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 *11 12 14 15)
+<font color="#4E9A06">[   30.297748] </font><font color="#C4A000">ACPI</font>: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 *11 12 14 15)
+<font color="#4E9A06">[   30.297834] </font><font color="#C4A000">ACPI</font>: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
+<font color="#4E9A06">[   30.299924] </font><font color="#C4A000">ACPI</font>: EC: interrupt unblocked
+<font color="#4E9A06">[   30.299950] </font><font color="#C4A000">ACPI</font>: EC: event unblocked
+<font color="#4E9A06">[   30.299962] </font><font color="#C4A000">ACPI</font>: \_SB_.PCI0.LPCB.ECDV: GPE=0x14, EC_CMD/EC_SC=0x934, EC_DATA=0x930
+<font color="#4E9A06">[   30.299963] </font><font color="#C4A000">ACPI</font>: \_SB_.PCI0.LPCB.ECDV: Boot DSDT EC used to handle transactions and events
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">iommu</font>: Default domain type: Translated 
+<font color="#4E9A06">[   30.300048] </font>SCSI subsystem initialized
+<font color="#4E9A06">[   30.300048] </font>libata version 3.00 loaded.
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">pci 0000:00:02.0</font>: vgaarb: setting as boot VGA device
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">pci 0000:00:02.0</font>: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">pci 0000:00:02.0</font>: vgaarb: bridge control possible
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">vgaarb</font>: loaded
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">ACPI</font>: bus type USB registered
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">usbcore</font>: registered new interface driver usbfs
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">usbcore</font>: registered new interface driver hub
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">usbcore</font>: registered new device driver usb
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">pps_core</font>: LinuxPPS API ver. 1 registered
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">pps_core</font>: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti &lt;giometti@linux.it&gt;
+<font color="#4E9A06">[   30.300048] </font>PTP clock support registered
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">EDAC MC</font>: Ver: 3.0.0
+<font color="#4E9A06">[   30.300048] </font><font color="#C4A000">PCI</font>: Using ACPI for IRQ routing
+<font color="#4E9A06">[   30.330484] </font><font color="#C4A000">PCI</font>: pci_cache_line_size set to 64 bytes
+<font color="#4E9A06">[   30.330604] </font><font color="#C4A000">e820</font>: reserve RAM buffer [mem 0x00090800-0x0009ffff]
+<font color="#4E9A06">[   30.330605] </font><font color="#C4A000">e820</font>: reserve RAM buffer [mem 0x7a0a2000-0x7bffffff]
+<font color="#4E9A06">[   30.330605] </font><font color="#C4A000">e820</font>: reserve RAM buffer [mem 0x46f800000-0x46fffffff]
+<font color="#4E9A06">[   30.330692] </font><font color="#C4A000">NetLabel</font>: Initializing
+<font color="#4E9A06">[   30.330693] </font><font color="#C4A000">NetLabel</font>:  domain hash size = 128
+<font color="#4E9A06">[   30.330693] </font><font color="#C4A000">NetLabel</font>:  protocols = UNLABELED CIPSOv4 CALIPSO
+<font color="#4E9A06">[   30.330707] </font><font color="#C4A000">NetLabel</font>:  unlabeled traffic allowed by default
+<font color="#4E9A06">[   30.330718] </font><font color="#C4A000">hpet0</font>: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+<font color="#4E9A06">[   30.330718] </font><font color="#C4A000">hpet0</font>: 8 comparators, 64-bit 24.000000 MHz counter
+<font color="#4E9A06">[   30.332255] </font><font color="#C4A000">clocksource</font>: Switched to clocksource tsc-early
+<font color="#4E9A06">[   30.339889] </font>*** VALIDATE bpf ***
+<font color="#4E9A06">[   30.339964] </font><font color="#C4A000">VFS</font>: Disk quotas dquot_6.6.0
+<font color="#4E9A06">[   30.339979] </font><font color="#C4A000">VFS</font>: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+<font color="#4E9A06">[   30.340000] </font>*** VALIDATE ramfs ***
+<font color="#4E9A06">[   30.340003] </font>*** VALIDATE hugetlbfs ***
+<font color="#4E9A06">[   30.340073] </font><font color="#C4A000">AppArmor</font>: AppArmor Filesystem Enabled
+<font color="#4E9A06">[   30.340100] </font><font color="#C4A000">pnp</font>: PnP ACPI init
+<font color="#4E9A06">[   30.340401] </font><font color="#C4A000">system 00:00</font>: [io  0x0680-0x069f] has been reserved
+<font color="#4E9A06">[   30.340403] </font><font color="#C4A000">system 00:00</font>: [io  0xffff] has been reserved
+<font color="#4E9A06">[   30.340404] </font><font color="#C4A000">system 00:00</font>: [io  0xffff] has been reserved
+<font color="#4E9A06">[   30.340405] </font><font color="#C4A000">system 00:00</font>: [io  0xffff] has been reserved
+<font color="#4E9A06">[   30.340406] </font><font color="#C4A000">system 00:00</font>: [io  0x1800-0x18fe] has been reserved
+<font color="#4E9A06">[   30.340407] </font><font color="#C4A000">system 00:00</font>: [io  0x164e-0x164f] has been reserved
+<font color="#4E9A06">[   30.340411] </font><font color="#C4A000">system 00:00</font>: Plug and Play ACPI device, IDs PNP0c02 (active)
+<font color="#4E9A06">[   30.340513] </font><font color="#C4A000">system 00:01</font>: [io  0x0800-0x087f] has been reserved
+<font color="#4E9A06">[   30.340516] </font><font color="#C4A000">system 00:01</font>: Plug and Play ACPI device, IDs PNP0c02 (active)
+<font color="#4E9A06">[   30.340534] </font><font color="#C4A000">pnp 00:02</font>: Plug and Play ACPI device, IDs PNP0b00 (active)
+<font color="#4E9A06">[   30.340572] </font><font color="#C4A000">system 00:03</font>: [io  0x1854-0x1857] has been reserved
+<font color="#4E9A06">[   30.340575] </font><font color="#C4A000">system 00:03</font>: Plug and Play ACPI device, IDs INT3f0d PNP0c02 (active)
+<font color="#4E9A06">[   30.340687] </font><font color="#C4A000">pnp 00:04</font>: Plug and Play ACPI device, IDs PNP0303 (active)
+<font color="#4E9A06">[   30.340703] </font><font color="#C4A000">pnp 00:05</font>: Plug and Play ACPI device, IDs DLL0767 PNP0f13 (active)
+<font color="#4E9A06">[   30.340975] </font><font color="#C4A000">system 00:06</font>: [mem 0xfed10000-0xfed17fff] has been reserved
+<font color="#4E9A06">[   30.340977] </font><font color="#C4A000">system 00:06</font>: [mem 0xfed18000-0xfed18fff] has been reserved
+<font color="#4E9A06">[   30.340978] </font><font color="#C4A000">system 00:06</font>: [mem 0xfed19000-0xfed19fff] has been reserved
+<font color="#4E9A06">[   30.340979] </font><font color="#C4A000">system 00:06</font>: [mem 0xe0000000-0xefffffff] has been reserved
+<font color="#4E9A06">[   30.340980] </font><font color="#C4A000">system 00:06</font>: [mem 0xfed20000-0xfed3ffff] has been reserved
+<font color="#4E9A06">[   30.340981] </font><font color="#C4A000">system 00:06</font>: [mem 0xfed90000-0xfed93fff] could not be reserved
+<font color="#4E9A06">[   30.340982] </font><font color="#C4A000">system 00:06</font>: [mem 0xfed45000-0xfed8ffff] has been reserved
+<font color="#4E9A06">[   30.340983] </font><font color="#C4A000">system 00:06</font>: [mem 0xff000000-0xffffffff] has been reserved
+<font color="#4E9A06">[   30.340984] </font><font color="#C4A000">system 00:06</font>: [mem 0xfee00000-0xfeefffff] could not be reserved
+<font color="#4E9A06">[   30.340985] </font><font color="#C4A000">system 00:06</font>: [mem 0xdffe0000-0xdfffffff] has been reserved
+<font color="#4E9A06">[   30.340988] </font><font color="#C4A000">system 00:06</font>: Plug and Play ACPI device, IDs PNP0c02 (active)
+<font color="#4E9A06">[   30.341030] </font><font color="#C4A000">system 00:07</font>: [mem 0xfd000000-0xfdabffff] has been reserved
+<font color="#4E9A06">[   30.341031] </font><font color="#C4A000">system 00:07</font>: [mem 0xfdad0000-0xfdadffff] has been reserved
+<font color="#4E9A06">[   30.341032] </font><font color="#C4A000">system 00:07</font>: [mem 0xfdb00000-0xfdffffff] has been reserved
+<font color="#4E9A06">[   30.341033] </font><font color="#C4A000">system 00:07</font>: [mem 0xfe000000-0xfe01ffff] could not be reserved
+<font color="#4E9A06">[   30.341034] </font><font color="#C4A000">system 00:07</font>: [mem 0xfe036000-0xfe03bfff] has been reserved
+<font color="#4E9A06">[   30.341035] </font><font color="#C4A000">system 00:07</font>: [mem 0xfe03d000-0xfe3fffff] has been reserved
+<font color="#4E9A06">[   30.341036] </font><font color="#C4A000">system 00:07</font>: [mem 0xfe410000-0xfe7fffff] has been reserved
+<font color="#4E9A06">[   30.341038] </font><font color="#C4A000">system 00:07</font>: Plug and Play ACPI device, IDs PNP0c02 (active)
+<font color="#4E9A06">[   30.341381] </font><font color="#C4A000">system 00:08</font>: [io  0xff00-0xfffe] has been reserved
+<font color="#4E9A06">[   30.341383] </font><font color="#C4A000">system 00:08</font>: Plug and Play ACPI device, IDs PNP0c02 (active)
+<font color="#4E9A06">[   30.342808] </font><font color="#C4A000">system 00:09</font>: [mem 0xfdaf0000-0xfdafffff] has been reserved
+<font color="#4E9A06">[   30.342809] </font><font color="#C4A000">system 00:09</font>: [mem 0xfdae0000-0xfdaeffff] has been reserved
+<font color="#4E9A06">[   30.342810] </font><font color="#C4A000">system 00:09</font>: [mem 0xfdac0000-0xfdacffff] has been reserved
+<font color="#4E9A06">[   30.342813] </font><font color="#C4A000">system 00:09</font>: Plug and Play ACPI device, IDs PNP0c02 (active)
+<font color="#4E9A06">[   30.347790] </font><font color="#C4A000">pnp</font>: PnP ACPI: found 10 devices
+<font color="#4E9A06">[   30.348860] </font><font color="#C4A000">thermal_sys</font>: Registered thermal governor &apos;fair_share&apos;
+<font color="#4E9A06">[   30.348860] </font><font color="#C4A000">thermal_sys</font>: Registered thermal governor &apos;bang_bang&apos;
+<font color="#4E9A06">[   30.348861] </font><font color="#C4A000">thermal_sys</font>: Registered thermal governor &apos;step_wise&apos;
+<font color="#4E9A06">[   30.348861] </font><font color="#C4A000">thermal_sys</font>: Registered thermal governor &apos;user_space&apos;
+<font color="#4E9A06">[   30.348862] </font><font color="#C4A000">thermal_sys</font>: Registered thermal governor &apos;power_allocator&apos;
+<font color="#4E9A06">[   30.353357] </font><font color="#C4A000">clocksource</font>: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+<font color="#4E9A06">[   30.353390] </font><font color="#C4A000">pci 0000:00:1c.0</font>: PCI bridge to [bus 01]
+<font color="#4E9A06">[   30.353403] </font><font color="#C4A000">pci 0000:00:1c.0</font>:   bridge window [io  0xe000-0xefff]
+<font color="#4E9A06">[   30.353406] </font><font color="#C4A000">pci 0000:00:1c.0</font>:   bridge window [mem 0xdf100000-0xdf1fffff]
+<font color="#4E9A06">[   30.353411] </font><font color="#C4A000">pci 0000:00:1c.5</font>: PCI bridge to [bus 02]
+<font color="#4E9A06">[   30.353414] </font><font color="#C4A000">pci 0000:00:1c.5</font>:   bridge window [mem 0xdf000000-0xdf0fffff]
+<font color="#4E9A06">[   30.353419] </font><font color="#C4A000">pci_bus 0000:00</font>: resource 4 [io  0x0000-0x0cf7 window]
+<font color="#4E9A06">[   30.353421] </font><font color="#C4A000">pci_bus 0000:00</font>: resource 5 [io  0x0d00-0xffff window]
+<font color="#4E9A06">[   30.353422] </font><font color="#C4A000">pci_bus 0000:00</font>: resource 6 [mem 0x000a0000-0x000bffff window]
+<font color="#4E9A06">[   30.353423] </font><font color="#C4A000">pci_bus 0000:00</font>: resource 7 [mem 0x8f800000-0xdfffffff window]
+<font color="#4E9A06">[   30.353423] </font><font color="#C4A000">pci_bus 0000:00</font>: resource 8 [mem 0xfd000000-0xfe7fffff window]
+<font color="#4E9A06">[   30.353425] </font><font color="#C4A000">pci_bus 0000:01</font>: resource 0 [io  0xe000-0xefff]
+<font color="#4E9A06">[   30.353425] </font><font color="#C4A000">pci_bus 0000:01</font>: resource 1 [mem 0xdf100000-0xdf1fffff]
+<font color="#4E9A06">[   30.353426] </font><font color="#C4A000">pci_bus 0000:02</font>: resource 1 [mem 0xdf000000-0xdf0fffff]
+<font color="#4E9A06">[   30.353592] </font><font color="#C4A000">NET</font>: Registered protocol family 2
+<font color="#4E9A06">[   30.353722] </font><font color="#C4A000">tcp_listen_portaddr_hash hash table entries</font>: 8192 (order: 5, 131072 bytes, linear)
+<font color="#4E9A06">[   30.353795] </font><font color="#C4A000">TCP established hash table entries</font>: 131072 (order: 8, 1048576 bytes, linear)
+<font color="#4E9A06">[   30.353955] </font><font color="#C4A000">TCP bind hash table entries</font>: 65536 (order: 8, 1048576 bytes, linear)
+<font color="#4E9A06">[   30.354020] </font><font color="#C4A000">TCP</font>: Hash tables configured (established 131072 bind 65536)
+<font color="#4E9A06">[   30.354059] </font><font color="#C4A000">UDP hash table entries</font>: 8192 (order: 6, 262144 bytes, linear)
+<font color="#4E9A06">[   30.354098] </font><font color="#C4A000">UDP-Lite hash table entries</font>: 8192 (order: 6, 262144 bytes, linear)
+<font color="#4E9A06">[   30.354154] </font><font color="#C4A000">NET</font>: Registered protocol family 1
+<font color="#4E9A06">[   30.354159] </font><font color="#C4A000">NET</font>: Registered protocol family 44
+<font color="#4E9A06">[   30.354167] </font><font color="#C4A000">pci 0000:00:02.0</font>: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+<font color="#4E9A06">[   30.354868] </font><font color="#C4A000">PCI</font>: CLS 0 bytes, default 64
+<font color="#4E9A06">[   30.354906] </font>Trying to unpack rootfs image as initramfs...
+<font color="#4E9A06">[   30.551783] </font><font color="#C4A000">Freeing initrd memory</font>: 88696K
+<font color="#4E9A06">[   30.551908] </font><font color="#C4A000">DMAR</font>: ACPI device &quot;device:70&quot; under DMAR at fed91000 as 00:15.0
+<font color="#4E9A06">[   30.551910] </font><font color="#C4A000">DMAR</font>: ACPI device &quot;device:71&quot; under DMAR at fed91000 as 00:15.1
+<font color="#4E9A06">[   30.577649] </font><font color="#C4A000">PCI-DMA</font>: Using software bounce buffering for IO (SWIOTLB)
+<font color="#4E9A06">[   30.577650] </font><font color="#C4A000">software IO TLB</font>: mapped [mem 0x70a04000-0x74a04000] (64MB)
+<font color="#4E9A06">[   30.577917] </font><font color="#C4A000">check</font>: Scanning for low memory corruption every 60 seconds
+<font color="#4E9A06">[   30.579675] </font>Initialise system trusted keyrings
+<font color="#4E9A06">[   30.579686] </font>Key type blacklist registered
+<font color="#4E9A06">[   30.579713] </font><font color="#C4A000">workingset</font>: timestamp_bits=36 max_order=22 bucket_order=0
+<font color="#4E9A06">[   30.580807] </font><font color="#C4A000">zbud</font>: loaded
+<font color="#4E9A06">[   30.581126] </font><font color="#C4A000">squashfs</font>: version 4.0 (2009/01/31) Phillip Lougher
+<font color="#4E9A06">[   30.581250] </font><font color="#C4A000">fuse</font>: init (API version 7.31)
+<font color="#4E9A06">[   30.581262] </font>*** VALIDATE fuse ***
+<font color="#4E9A06">[   30.581264] </font>*** VALIDATE fuse ***
+<font color="#4E9A06">[   30.581348] </font>Platform Keyring initialized
+<font color="#4E9A06">[   30.585454] </font>Key type asymmetric registered
+<font color="#4E9A06">[   30.585455] </font>Asymmetric key parser &apos;x509&apos; registered
+<font color="#4E9A06">[   30.585464] </font>Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+<font color="#4E9A06">[   30.585501] </font>io scheduler mq-deadline registered
+<font color="#4E9A06">[   30.586101] </font><font color="#C4A000">shpchp</font>: Standard Hot Plug PCI Controller Driver version: 0.4
+<font color="#4E9A06">[   30.586154] </font><font color="#C4A000">intel_idle</font>: MWAIT substates: 0x11142120
+<font color="#4E9A06">[   30.586155] </font><font color="#C4A000">intel_idle</font>: v0.4.1 model 0x9E
+<font color="#4E9A06">[   30.586523] </font><font color="#C4A000">intel_idle</font>: lapic_timer_reliable_states 0xffffffff
+<font color="#4E9A06">[   30.589147] </font><font color="#C4A000">ACPI</font>: AC Adapter [AC] (off-line)
+<font color="#4E9A06">[   30.589208] </font><font color="#C4A000">input</font>: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0
+<font color="#4E9A06">[   30.589237] </font><font color="#C4A000">ACPI</font>: Lid Switch [LID0]
+<font color="#4E9A06">[   30.589261] </font><font color="#C4A000">input</font>: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+<font color="#4E9A06">[   30.589280] </font><font color="#C4A000">ACPI</font>: Power Button [PBTN]
+<font color="#4E9A06">[   30.589301] </font><font color="#C4A000">input</font>: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2
+<font color="#4E9A06">[   30.589315] </font><font color="#C4A000">ACPI</font>: Sleep Button [SBTN]
+<font color="#4E9A06">[   30.589337] </font><font color="#C4A000">input</font>: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input3
+<font color="#4E9A06">[   30.589353] </font><font color="#C4A000">ACPI</font>: Power Button [PWRF]
+<font color="#4E9A06">[   30.591660] </font><font color="#C4A000">thermal LNXTHERM:00</font>: registered as thermal_zone0
+<font color="#4E9A06">[   30.591661] </font><font color="#C4A000">ACPI</font>: Thermal Zone [THM] (25 C)
+<font color="#4E9A06">[   30.591811] </font><font color="#C4A000">Serial</font>: 8250/16550 driver, 32 ports, IRQ sharing enabled
+<font color="#4E9A06">[   30.593464] </font>Linux agpgart interface v0.103
+<font color="#4E9A06">[   30.594361] </font><font color="#C4A000">tpm_crb MSFT0101:00</font><font color="#CC0000">: [Firmware Bug]: ACPI region does not cover the entire command/response buffer. [mem 0xfed40000-0xfed4087f flags 0x200] vs fed40080 f80</font>
+<font color="#4E9A06">[   30.594682] </font><font color="#C4A000">tpm_crb MSFT0101:00</font><font color="#CC0000">: [Firmware Bug]: ACPI region does not cover the entire command/response buffer. [mem 0xfed40000-0xfed4087f flags 0x200] vs fed40080 f80</font>
+<font color="#4E9A06">[   30.616968] </font><font color="#C4A000">battery</font>: ACPI: Battery Slot [BAT0] (battery present)
+<font color="#4E9A06">[   30.626009] </font><font color="#C4A000">loop</font>: module loaded
+<font color="#4E9A06">[   30.626192] </font><font color="#C4A000">libphy</font>: Fixed MDIO Bus: probed
+<font color="#4E9A06">[   30.626192] </font><font color="#C4A000">tun</font>: Universal TUN/TAP device driver, 1.6
+<font color="#4E9A06">[   30.626240] </font>PPP generic driver version 2.4.2
+<font color="#4E9A06">[   30.626331] </font><font color="#C4A000">VFIO - User Level meta-driver version</font>: 0.3
+<font color="#4E9A06">[   30.626384] </font><font color="#C4A000">ehci_hcd</font>: USB 2.0 &apos;Enhanced&apos; Host Controller (EHCI) Driver
+<font color="#4E9A06">[   30.626388] </font><font color="#C4A000">ehci-pci</font>: EHCI PCI platform driver
+<font color="#4E9A06">[   30.626396] </font><font color="#C4A000">ehci-platform</font>: EHCI generic platform driver
+<font color="#4E9A06">[   30.626403] </font><font color="#C4A000">ohci_hcd</font>: USB 1.1 &apos;Open&apos; Host Controller (OHCI) Driver
+<font color="#4E9A06">[   30.626405] </font><font color="#C4A000">ohci-pci</font>: OHCI PCI platform driver
+<font color="#4E9A06">[   30.626410] </font><font color="#C4A000">ohci-platform</font>: OHCI generic platform driver
+<font color="#4E9A06">[   30.626416] </font><font color="#C4A000">uhci_hcd</font>: USB Universal Host Controller Interface driver
+<font color="#4E9A06">[   30.626599] </font><font color="#C4A000">xhci_hcd 0000:00:14.0</font>: xHCI Host Controller
+<font color="#4E9A06">[   30.626605] </font><font color="#C4A000">xhci_hcd 0000:00:14.0</font>: new USB bus registered, assigned bus number 1
+<font color="#4E9A06">[   30.627687] </font><font color="#C4A000">xhci_hcd 0000:00:14.0</font>: hcc params 0x200077c1 hci version 0x100 quirks 0x0000000001109810
+<font color="#4E9A06">[   30.627897] </font><font color="#C4A000">xhci_hcd 0000:00:14.0</font>: cache line size of 64 is not supported
+<font color="#4E9A06">[   30.628060] </font><font color="#C4A000">usb usb1</font>: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.04
+<font color="#4E9A06">[   30.628061] </font><font color="#C4A000">usb usb1</font>: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<font color="#4E9A06">[   30.628062] </font><font color="#C4A000">usb usb1</font>: Product: xHCI Host Controller
+<font color="#4E9A06">[   30.628063] </font><font color="#C4A000">usb usb1</font>: Manufacturer: Linux 5.4.0-42-generic xhci-hcd
+<font color="#4E9A06">[   30.628064] </font><font color="#C4A000">usb usb1</font>: SerialNumber: 0000:00:14.0
+<font color="#4E9A06">[   30.628133] </font><font color="#C4A000">hub 1-0:1.0</font>: USB hub found
+<font color="#4E9A06">[   30.628159] </font><font color="#C4A000">hub 1-0:1.0</font>: 16 ports detected
+<font color="#4E9A06">[   30.629795] </font><font color="#C4A000">xhci_hcd 0000:00:14.0</font>: xHCI Host Controller
+<font color="#4E9A06">[   30.629798] </font><font color="#C4A000">xhci_hcd 0000:00:14.0</font>: new USB bus registered, assigned bus number 2
+<font color="#4E9A06">[   30.629800] </font><font color="#C4A000">xhci_hcd 0000:00:14.0</font>: Host supports USB 3.0 SuperSpeed
+<font color="#4E9A06">[   30.629836] </font><font color="#C4A000">usb usb2</font>: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.04
+<font color="#4E9A06">[   30.629837] </font><font color="#C4A000">usb usb2</font>: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<font color="#4E9A06">[   30.629837] </font><font color="#C4A000">usb usb2</font>: Product: xHCI Host Controller
+<font color="#4E9A06">[   30.629838] </font><font color="#C4A000">usb usb2</font>: Manufacturer: Linux 5.4.0-42-generic xhci-hcd
+<font color="#4E9A06">[   30.629839] </font><font color="#C4A000">usb usb2</font>: SerialNumber: 0000:00:14.0
+<font color="#4E9A06">[   30.629943] </font><font color="#C4A000">hub 2-0:1.0</font>: USB hub found
+<font color="#4E9A06">[   30.629969] </font><font color="#C4A000">hub 2-0:1.0</font>: 8 ports detected
+<font color="#4E9A06">[   30.630863] </font><font color="#C4A000">usb</font><b>: port power management may be unreliable</b>
+<font color="#4E9A06">[   30.631477] </font><font color="#C4A000">i8042</font>: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+<font color="#4E9A06">[   30.631888] </font><font color="#C4A000">i8042</font><b>: Warning: Keylock active</b>
+<font color="#4E9A06">[   30.633558] </font><font color="#C4A000">serio</font>: i8042 KBD port at 0x60,0x64 irq 1
+<font color="#4E9A06">[   30.633561] </font><font color="#C4A000">serio</font>: i8042 AUX port at 0x60,0x64 irq 12
+<font color="#4E9A06">[   30.633731] </font><font color="#C4A000">mousedev</font>: PS/2 mouse device common for all mice
+<font color="#4E9A06">[   30.634160] </font><font color="#C4A000">rtc_cmos 00:02</font>: RTC can wake from S4
+<font color="#4E9A06">[   30.634796] </font><font color="#C4A000">rtc_cmos 00:02</font>: registered as rtc0
+<font color="#4E9A06">[   30.634807] </font><font color="#C4A000">rtc_cmos 00:02</font>: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+<font color="#4E9A06">[   30.634812] </font>i2c /dev entries driver
+<font color="#4E9A06">[   30.634874] </font><font color="#C4A000">device-mapper</font>: uevent: version 1.0.3
+<font color="#4E9A06">[   30.634916] </font><font color="#C4A000">device-mapper</font>: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+<font color="#4E9A06">[   30.634930] </font><font color="#C4A000">platform eisa.0</font>: Probing EISA bus 0
+<font color="#4E9A06">[   30.634935] </font><font color="#C4A000">platform eisa.0</font><b>: EISA: Cannot allocate resource for mainboard</b>
+<font color="#4E9A06">[   30.634936] </font><font color="#C4A000">platform eisa.0</font><b>: Cannot allocate resource for EISA slot 1</b>
+<font color="#4E9A06">[   30.634937] </font><font color="#C4A000">platform eisa.0</font><b>: Cannot allocate resource for EISA slot 2</b>
+<font color="#4E9A06">[   30.634938] </font><font color="#C4A000">platform eisa.0</font><b>: Cannot allocate resource for EISA slot 3</b>
+<font color="#4E9A06">[   30.634939] </font><font color="#C4A000">platform eisa.0</font><b>: Cannot allocate resource for EISA slot 4</b>
+<font color="#4E9A06">[   30.634940] </font><font color="#C4A000">platform eisa.0</font><b>: Cannot allocate resource for EISA slot 5</b>
+<font color="#4E9A06">[   30.634942] </font><font color="#C4A000">platform eisa.0</font><b>: Cannot allocate resource for EISA slot 6</b>
+<font color="#4E9A06">[   30.634944] </font><font color="#C4A000">platform eisa.0</font><b>: Cannot allocate resource for EISA slot 7</b>
+<font color="#4E9A06">[   30.634969] </font><font color="#C4A000">input</font>: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input4
+<font color="#4E9A06">[   30.634981] </font><font color="#C4A000">platform eisa.0</font><b>: Cannot allocate resource for EISA slot 8</b>
+<font color="#4E9A06">[   30.634982] </font><font color="#C4A000">platform eisa.0</font>: EISA: Detected 0 cards
+<font color="#4E9A06">[   30.634985] </font><font color="#C4A000">intel_pstate</font>: Intel P-state driver initializing
+<font color="#4E9A06">[   30.635036] </font><font color="#C4A000">intel_pstate</font>: Disabling energy efficiency optimization
+<font color="#4E9A06">[   30.635661] </font><font color="#C4A000">intel_pstate</font>: HWP enabled
+<font color="#4E9A06">[   30.635878] </font><font color="#C4A000">ledtrig-cpu</font>: registered to indicate activity on CPUs
+<font color="#4E9A06">[   30.635912] </font><font color="#C4A000">resource sanity check</font><b>: requesting [mem 0xfdffe800-0xfe0007ff], which spans more than pnp 00:07 [mem 0xfdb00000-0xfdffffff]</b>
+<font color="#4E9A06">[   30.635914] </font><b>caller pmc_core_probe+0x7f/0x17f mapping multiple BARs</b>
+<font color="#4E9A06">[   30.635935] </font><font color="#C4A000">intel_pmc_core INT33A1:00</font>:  initialized
+<font color="#4E9A06">[   30.635990] </font><font color="#C4A000">drop_monitor</font>: Initializing network drop monitor service
+<font color="#4E9A06">[   30.636112] </font><font color="#C4A000">NET</font>: Registered protocol family 10
+<font color="#4E9A06">[   30.643073] </font>Segment Routing with IPv6
+<font color="#4E9A06">[   30.643086] </font><font color="#C4A000">NET</font>: Registered protocol family 17
+<font color="#4E9A06">[   30.643217] </font>Key type dns_resolver registered
+<font color="#4E9A06">[   30.643862] </font><font color="#C4A000">RAS</font>: Correctable Errors collector initialized.
+<font color="#4E9A06">[   30.643905] </font><font color="#C4A000">microcode</font>: sig=0x906e9, pf=0x20, revision=0xd6
+<font color="#4E9A06">[   30.644147] </font><font color="#C4A000">microcode</font>: Microcode Update Driver: v2.2.
+<font color="#4E9A06">[   30.644150] </font><font color="#C4A000">IPI shorthand broadcast</font>: enabled
+<font color="#4E9A06">[   30.644155] </font><font color="#C4A000">sched_clock</font>: Marking stable (30640966624, 3178461)-&gt;(30688063860, -43918775)
+<font color="#4E9A06">[   30.644350] </font>registered taskstats version 1
+<font color="#4E9A06">[   30.644358] </font>Loading compiled-in X.509 certificates
+<font color="#4E9A06">[   30.645847] </font><font color="#C4A000">Loaded X.509 cert &apos;Build time autogenerated kernel key</font>: 9e1aeb581c5145b0cc48f50fdf6e09edec23120f&apos;
+<font color="#4E9A06">[   30.645870] </font><font color="#C4A000">zswap</font>: loaded using pool lzo/zbud
+<font color="#4E9A06">[   30.646006] </font>Key type ._fscrypt registered
+<font color="#4E9A06">[   30.646006] </font>Key type .fscrypt registered
+<font color="#4E9A06">[   30.652028] </font>Key type big_key registered
+<font color="#4E9A06">[   30.652032] </font>Key type trusted registered
+<font color="#4E9A06">[   30.655101] </font>Key type encrypted registered
+<font color="#4E9A06">[   30.655117] </font><font color="#C4A000">AppArmor</font>: AppArmor sha1 policy hashing enabled
+<font color="#4E9A06">[   30.655124] </font><font color="#C4A000">ima</font>: Allocated hash algorithm: sha1
+<font color="#4E9A06">[   30.680096] </font><font color="#C4A000">ima</font>: No architecture policies found
+<font color="#4E9A06">[   30.680101] </font><font color="#C4A000">evm</font>: Initialising EVM extended attributes:
+<font color="#4E9A06">[   30.680102] </font><font color="#C4A000">evm</font>: security.selinux
+<font color="#4E9A06">[   30.680102] </font><font color="#C4A000">evm</font>: security.SMACK64
+<font color="#4E9A06">[   30.680102] </font><font color="#C4A000">evm</font>: security.SMACK64EXEC
+<font color="#4E9A06">[   30.680103] </font><font color="#C4A000">evm</font>: security.SMACK64TRANSMUTE
+<font color="#4E9A06">[   30.680103] </font><font color="#C4A000">evm</font>: security.SMACK64MMAP
+<font color="#4E9A06">[   30.680103] </font><font color="#C4A000">evm</font>: security.apparmor
+<font color="#4E9A06">[   30.680104] </font><font color="#C4A000">evm</font>: security.ima
+<font color="#4E9A06">[   30.680104] </font><font color="#C4A000">evm</font>: security.capability
+<font color="#4E9A06">[   30.680104] </font><font color="#C4A000">evm</font>: HMAC attrs: 0x1
+<font color="#4E9A06">[   30.680970] </font><font color="#C4A000">PM</font>:   Magic number: 5:128:659
+<font color="#4E9A06">[   30.681180] </font><font color="#C4A000">rtc_cmos 00:02</font>: setting system clock to 2021-01-27T00:40:46 UTC (1611708046)
+<font color="#4E9A06">[   30.682204] </font><font color="#C4A000">Freeing unused decrypted memory</font>: 2040K
+<font color="#4E9A06">[   30.682591] </font><font color="#C4A000">Freeing unused kernel image memory</font>: 2712K
+<font color="#4E9A06">[   30.705732] </font><font color="#C4A000">Write protecting the kernel read-only data</font>: 22528k
+<font color="#4E9A06">[   30.706368] </font><font color="#C4A000">Freeing unused kernel image memory</font>: 2008K
+<font color="#4E9A06">[   30.706652] </font><font color="#C4A000">Freeing unused kernel image memory</font>: 1192K
+<font color="#4E9A06">[   30.713371] </font><font color="#C4A000">x86/mm</font>: Checked W+X mappings: passed, no W+X pages found.
+<font color="#4E9A06">[   30.713372] </font><font color="#C4A000">x86/mm</font>: Checking user space page tables
+<font color="#4E9A06">[   30.719945] </font><font color="#C4A000">x86/mm</font>: Checked W+X mappings: passed, no W+X pages found.
+<font color="#4E9A06">[   30.719946] </font>Run /init as init process
+<font color="#4E9A06">[   30.795257] </font><font color="#C4A000">hidraw</font>: raw HID events driver (C) Jiri Kosina
+<font color="#4E9A06">[   30.795742] </font><font color="#C4A000">wmi_bus wmi_bus-PNP0C14:00</font><b>: WQBC data block query control method not found</b>
+<font color="#4E9A06">[   30.800274] </font><font color="#C4A000">ahci 0000:00:17.0</font>: version 3.0
+<font color="#4E9A06">[   30.800586] </font><font color="#C4A000">ahci 0000:00:17.0</font>: SSS flag set, parallel bus scan disabled
+<font color="#4E9A06">[   30.800803] </font><font color="#C4A000">intel-lpss 0000:00:15.0</font>: enabling device (0000 -&gt; 0002)
+<font color="#4E9A06">[   30.801103] </font><font color="#C4A000">idma64 idma64.0</font>: Found Intel integrated DMA 64-bit
+<font color="#4E9A06">[   30.804091] </font><font color="#C4A000">r8169 0000:01:00.0</font><b>: can&apos;t disable ASPM; OS doesn&apos;t have ASPM control</b>
+<font color="#4E9A06">[   30.807102] </font><font color="#C4A000">cryptd</font>: max_cpu_qlen set to 1000
+<font color="#4E9A06">[   30.811283] </font><font color="#C4A000">ahci 0000:00:17.0</font>: AHCI 0001.0301 32 slots 2 ports 6 Gbps 0x3 impl RAID mode
+<font color="#4E9A06">[   30.811286] </font><font color="#C4A000">ahci 0000:00:17.0</font>: flags: 64bit ncq sntf stag pm led clo only pio slum part ems deso sadm sds apst 
+<font color="#4E9A06">[   30.812493] </font>AVX2 version of gcm_enc/dec engaged.
+<font color="#4E9A06">[   30.812495] </font>AES CTR mode by8 optimization enabled
+<font color="#4E9A06">[   30.817622] </font><font color="#C4A000">libphy</font>: r8169: probed
+<font color="#4E9A06">[   30.817855] </font><font color="#C4A000">r8169 0000:01:00.0 eth0</font>: RTL8168h/8111h, 50:9a:4c:b5:a9:61, XID 541, IRQ 126
+<font color="#4E9A06">[   30.817857] </font><font color="#C4A000">r8169 0000:01:00.0 eth0</font>: jumbo features [frames: 9200 bytes, tx checksumming: ko]
+<font color="#4E9A06">[   30.828739] </font><font color="#C4A000">scsi host0</font>: ahci
+<font color="#4E9A06">[   30.829204] </font><font color="#C4A000">scsi host1</font>: ahci
+<font color="#4E9A06">[   30.829265] </font><font color="#C4A000">ata1</font>: SATA max UDMA/133 abar m2048@0xdf233000 port 0xdf233100 irq 125
+<font color="#4E9A06">[   30.829267] </font><font color="#C4A000">ata2</font>: SATA max UDMA/133 abar m2048@0xdf233000 port 0xdf233180 irq 125
+<font color="#4E9A06">[   30.832612] </font><font color="#C4A000">intel-lpss 0000:00:15.1</font>: enabling device (0000 -&gt; 0002)
+<font color="#4E9A06">[   30.832830] </font><font color="#C4A000">idma64 idma64.1</font>: Found Intel integrated DMA 64-bit
+<font color="#4E9A06">[   30.840296] </font><font color="#C4A000">i2c_hid i2c-DLL0798:00</font><b>: i2c-DLL0798:00 supply vdd not found, using dummy regulator</b>
+<font color="#4E9A06">[   30.840304] </font><font color="#C4A000">i2c_hid i2c-DLL0798:00</font><b>: i2c-DLL0798:00 supply vddl not found, using dummy regulator</b>
+<font color="#4E9A06">[   30.859566] </font><font color="#C4A000">i801_smbus 0000:00:1f.4</font>: SPD Write Disable is set
+<font color="#4E9A06">[   30.859603] </font><font color="#C4A000">i801_smbus 0000:00:1f.4</font>: SMBus using PCI interrupt
+<font color="#4E9A06">[   30.859819] </font><font color="#C4A000">r8169 0000:01:00.0 enp1s0</font>: renamed from eth0
+<font color="#4E9A06">[   30.865007] </font><font color="#C4A000">i915 0000:00:02.0</font>: vgaarb: deactivate vga console
+<font color="#4E9A06">[   30.866588] </font><font color="#C4A000">Console</font>: switching to colour dummy device 80x25
+<font color="#4E9A06">[   30.917590] </font>[drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+<font color="#4E9A06">[   30.917590] </font>[drm] Driver supports precise vblank timestamp query.
+<font color="#4E9A06">[   30.917702] </font><font color="#C4A000">i915 0000:00:02.0</font>: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+<font color="#4E9A06">[   30.918434] </font>[drm] Finished loading DMC firmware i915/kbl_dmc_ver1_04.bin (v1.4)
+<font color="#4E9A06">[   30.969573] </font><font color="#C4A000">usb 1-1</font>: new high-speed USB device number 2 using xhci_hcd
+<font color="#4E9A06">[   31.147898] </font><font color="#C4A000">ata1</font>: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+<font color="#4E9A06">[   31.148936] </font><font color="#C4A000">ata1.00</font>: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+<font color="#4E9A06">[   31.148938] </font><font color="#C4A000">ata1.00</font>: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+<font color="#4E9A06">[   31.148939] </font><font color="#C4A000">ata1.00</font>: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+<font color="#4E9A06">[   31.150073] </font><font color="#C4A000">ata1.00</font>: ATA-9: SanDisk X400 M.2 2280 256GB, X4130012, max UDMA/133
+<font color="#4E9A06">[   31.150074] </font><font color="#C4A000">ata1.00</font>: 500118192 sectors, multi 1: LBA48 NCQ (depth 32), AA
+<font color="#4E9A06">[   31.151366] </font><font color="#C4A000">ata1.00</font>: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+<font color="#4E9A06">[   31.151367] </font><font color="#C4A000">ata1.00</font>: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+<font color="#4E9A06">[   31.151368] </font><font color="#C4A000">ata1.00</font>: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+<font color="#4E9A06">[   31.152968] </font><font color="#C4A000">ata1.00</font>: configured for UDMA/133
+<font color="#4E9A06">[   31.153046] </font><font color="#C4A000">scsi 0:0:0:0</font>: Direct-Access     ATA      SanDisk X400 M.2 0012 PQ: 0 ANSI: 5
+<font color="#4E9A06">[   31.153173] </font><font color="#C4A000">sd 0:0:0:0</font>: Attached scsi generic sg0 type 0
+<font color="#4E9A06">[   31.153251] </font><font color="#C4A000">sd 0:0:0:0</font>: [sda] 500118192 512-byte logical blocks: (256 GB/238 GiB)
+<font color="#4E9A06">[   31.153261] </font><font color="#C4A000">sd 0:0:0:0</font>: [sda] Write Protect is off
+<font color="#4E9A06">[   31.153263] </font><font color="#C4A000">sd 0:0:0:0</font>: [sda] Mode Sense: 00 3a 00 00
+<font color="#4E9A06">[   31.153276] </font><font color="#C4A000">sd 0:0:0:0</font>: [sda] Write cache: enabled, read cache: enabled, doesn&apos;t support DPO or FUA
+<font color="#4E9A06">[   31.239572] </font><font color="#C4A000">input</font>: DLL0798:00 06CB:7E92 Mouse as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL0798:00/0018:06CB:7E92.0001/input/input7
+<font color="#4E9A06">[   31.239631] </font><font color="#C4A000">input</font>: DLL0798:00 06CB:7E92 Touchpad as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL0798:00/0018:06CB:7E92.0001/input/input8
+<font color="#4E9A06">[   31.239688] </font><font color="#C4A000">hid-generic 0018:06CB:7E92.0001</font>: input,hidraw0: I2C HID v1.00 Mouse [DLL0798:00 06CB:7E92] on i2c-DLL0798:00
+<font color="#4E9A06">[   31.282314] </font><font color="#C4A000"> sda</font>: sda1
+<font color="#4E9A06">[   31.282587] </font><font color="#C4A000">sd 0:0:0:0</font>: [sda] Attached SCSI disk
+<font color="#4E9A06">[   31.298964] </font><font color="#CC0000">[drm:lspcon_init [i915]] *ERROR* Failed to probe lspcon</font>
+<font color="#4E9A06">[   31.299003] </font><font color="#CC0000">[drm:intel_ddi_init [i915]] *ERROR* LSPCON init failed on port B</font>
+<font color="#4E9A06">[   31.305642] </font>[drm] Initialized i915 1.6.0 20190822 for 0000:00:02.0 on minor 0
+<font color="#4E9A06">[   31.307808] </font><font color="#C4A000">ACPI</font>: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+<font color="#4E9A06">[   31.308751] </font><font color="#C4A000">input</font>: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input10
+<font color="#4E9A06">[   31.467904] </font><font color="#C4A000">ata2</font>: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+<font color="#4E9A06">[   31.487682] </font><font color="#C4A000">ata2.00</font>: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+<font color="#4E9A06">[   31.487684] </font><font color="#C4A000">ata2.00</font>: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+<font color="#4E9A06">[   31.487685] </font><font color="#C4A000">ata2.00</font>: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+<font color="#4E9A06">[   31.489015] </font><font color="#C4A000">ata2.00</font>: ATA-8: TOSHIBA MQ01ABD100, AX0P3D, max UDMA/100
+<font color="#4E9A06">[   31.489016] </font><font color="#C4A000">ata2.00</font>: 1953525168 sectors, multi 16: LBA48 NCQ (depth 32), AA
+<font color="#4E9A06">[   31.490756] </font><font color="#C4A000">ata2.00</font>: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+<font color="#4E9A06">[   31.490757] </font><font color="#C4A000">ata2.00</font>: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+<font color="#4E9A06">[   31.490758] </font><font color="#C4A000">ata2.00</font>: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+<font color="#4E9A06">[   31.492088] </font><font color="#C4A000">ata2.00</font>: configured for UDMA/100
+<font color="#4E9A06">[   31.492171] </font><font color="#C4A000">scsi 1:0:0:0</font>: Direct-Access     ATA      TOSHIBA MQ01ABD1 3D   PQ: 0 ANSI: 5
+<font color="#4E9A06">[   31.492298] </font><font color="#C4A000">sd 1:0:0:0</font>: Attached scsi generic sg1 type 0
+<font color="#4E9A06">[   31.492326] </font><font color="#C4A000">sd 1:0:0:0</font>: [sdb] 1953525168 512-byte logical blocks: (1.00 TB/932 GiB)
+<font color="#4E9A06">[   31.492327] </font><font color="#C4A000">sd 1:0:0:0</font>: [sdb] 4096-byte physical blocks
+<font color="#4E9A06">[   31.492337] </font><font color="#C4A000">sd 1:0:0:0</font>: [sdb] Write Protect is off
+<font color="#4E9A06">[   31.492338] </font><font color="#C4A000">sd 1:0:0:0</font>: [sdb] Mode Sense: 00 3a 00 00
+<font color="#4E9A06">[   31.492353] </font><font color="#C4A000">sd 1:0:0:0</font>: [sdb] Write cache: enabled, read cache: enabled, doesn&apos;t support DPO or FUA
+<font color="#4E9A06">[   31.536260] </font><font color="#C4A000">sd 1:0:0:0</font>: [sdb] Attached SCSI disk
+<font color="#4E9A06">[   31.578921] </font><font color="#C4A000">fbcon</font>: i915drmfb (fb0) is primary device
+<font color="#4E9A06">[   31.587552] </font><font color="#C4A000">Console</font>: switching to colour frame buffer device 240x67
+<font color="#4E9A06">[   31.598421] </font><font color="#C4A000">i915 0000:00:02.0</font>: fb0: i915drmfb frame buffer device
+<font color="#4E9A06">[   31.605833] </font><font color="#C4A000">tsc</font>: Refined TSC clocksource calibration: 2807.971 MHz
+<font color="#4E9A06">[   31.605838] </font><font color="#C4A000">clocksource</font>: tsc: mask: 0xffffffffffffffff max_cycles: 0x2879aabdd06, max_idle_ns: 440795342522 ns
+<font color="#4E9A06">[   31.605900] </font><font color="#C4A000">clocksource</font>: Switched to clocksource tsc
+<font color="#4E9A06">[   36.309914] </font><font color="#C4A000">usb 1-1</font><font color="#CC0000">: device descriptor read/64, error -110</font>
+<font color="#4E9A06">[   36.566509] </font><font color="#C4A000">usb 1-1</font>: New USB device found, idVendor=abcd, idProduct=1234, bcdDevice= 1.00
+<font color="#4E9A06">[   36.566510] </font><font color="#C4A000">usb 1-1</font>: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+<font color="#4E9A06">[   36.566511] </font><font color="#C4A000">usb 1-1</font>: Product: UDisk           
+<font color="#4E9A06">[   36.566512] </font><font color="#C4A000">usb 1-1</font>: Manufacturer: General 
+<font color="#4E9A06">[   36.566512] </font><font color="#C4A000">usb 1-1</font>: SerialNumber: Љ
+<font color="#4E9A06">[   36.569529] </font><font color="#C4A000">usb-storage 1-1:1.0</font>: USB Mass Storage device detected
+<font color="#4E9A06">[   36.569941] </font><font color="#C4A000">scsi host2</font>: usb-storage 1-1:1.0
+<font color="#4E9A06">[   36.570010] </font><font color="#C4A000">usbcore</font>: registered new interface driver usb-storage
+<font color="#4E9A06">[   36.570859] </font><font color="#C4A000">usbcore</font>: registered new interface driver uas
+<font color="#4E9A06">[   36.693922] </font><font color="#C4A000">usb 1-4</font>: new full-speed USB device number 3 using xhci_hcd
+<font color="#4E9A06">[   36.843921] </font><font color="#C4A000">usb 1-4</font>: New USB device found, idVendor=8087, idProduct=0a2a, bcdDevice= 0.01
+<font color="#4E9A06">[   36.843923] </font><font color="#C4A000">usb 1-4</font>: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+<font color="#4E9A06">[   36.973927] </font><font color="#C4A000">usb 1-12</font>: new high-speed USB device number 4 using xhci_hcd
+<font color="#4E9A06">[   37.138439] </font><font color="#C4A000">usb 1-12</font>: New USB device found, idVendor=0c45, idProduct=6a06, bcdDevice=64.26
+<font color="#4E9A06">[   37.138440] </font><font color="#C4A000">usb 1-12</font>: New USB device strings: Mfr=2, Product=1, SerialNumber=0
+<font color="#4E9A06">[   37.138441] </font><font color="#C4A000">usb 1-12</font>: Product: Integrated_Webcam_HD
+<font color="#4E9A06">[   37.138442] </font><font color="#C4A000">usb 1-12</font>: Manufacturer: CNFFH37N12505000046T
+<font color="#4E9A06">[   37.590340] </font><font color="#C4A000">scsi 2:0:0:0</font>: Direct-Access     General  UDisk            5.00 PQ: 0 ANSI: 2
+<font color="#4E9A06">[   37.590664] </font><font color="#C4A000">sd 2:0:0:0</font>: Attached scsi generic sg2 type 0
+<font color="#4E9A06">[   37.591176] </font><font color="#C4A000">sd 2:0:0:0</font>: [sdc] 30720000 512-byte logical blocks: (15.7 GB/14.6 GiB)
+<font color="#4E9A06">[   37.591477] </font><font color="#C4A000">sd 2:0:0:0</font>: [sdc] Write Protect is off
+<font color="#4E9A06">[   37.591478] </font><font color="#C4A000">sd 2:0:0:0</font>: [sdc] Mode Sense: 0b 00 00 08
+<font color="#4E9A06">[   37.591673] </font><font color="#C4A000">sd 2:0:0:0</font><font color="#CC0000">: [sdc] No Caching mode page found</font>
+<font color="#4E9A06">[   37.591675] </font><font color="#C4A000">sd 2:0:0:0</font><font color="#CC0000">: [sdc] Assuming drive cache: write through</font>
+<font color="#4E9A06">[   37.682471] </font><font color="#C4A000"> sdc</font>: sdc1
+<font color="#4E9A06">[   37.687043] </font><font color="#C4A000">sd 2:0:0:0</font>: [sdc] Attached SCSI removable disk
+<font color="#4E9A06">[   45.337818] </font><font color="#C4A000">psmouse serio1</font><b>: Failed to deactivate mouse on isa0060/serio1: -5</b>
+<font color="#4E9A06">[   45.817849] </font><font color="#C4A000">psmouse serio1</font><b>: Failed to enable mouse on isa0060/serio1</b>
+<font color="#4E9A06">[   50.105747] </font><font color="#C4A000">input</font>: PS/2 Generic Mouse as /devices/platform/i8042/serio1/input/input6
+<font color="#4E9A06">[   50.309826] </font><font color="#C4A000">psmouse serio1</font><b>: Failed to enable mouse on isa0060/serio1</b>
+<font color="#4E9A06">[  219.059748] </font><font color="#C4A000">systemd[1]</font>: Inserted module &apos;autofs4&apos;
+<font color="#4E9A06">[  219.069385] </font><font color="#C4A000">systemd[1]</font>: systemd 245.4-4ubuntu3.2 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+<font color="#4E9A06">[  219.085968] </font><font color="#C4A000">systemd[1]</font>: Detected architecture x86-64.
+<font color="#4E9A06">[  219.106527] </font><font color="#C4A000">systemd[1]</font>: Set hostname to &lt;ubuntu&gt;.
+<font color="#4E9A06">[  219.106658] </font><font color="#C4A000">systemd[1]</font>: Initializing machine ID from random generator.
+<font color="#4E9A06">[  219.190959] </font><font color="#C4A000">systemd[1]</font>: /lib/systemd/system/dbus.socket:5: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+<font color="#4E9A06">[  219.217761] </font><font color="#C4A000">systemd[1]</font>: Created slice system-modprobe.slice.
+<font color="#4E9A06">[  219.217915] </font><font color="#C4A000">systemd[1]</font>: Created slice User and Session Slice.
+<font color="#4E9A06">[  219.217960] </font><font color="#C4A000">systemd[1]</font>: Started Forward Password Requests to Wall Directory Watch.
+<font color="#4E9A06">[  219.218128] </font><font color="#C4A000">systemd[1]</font>: Set up automount Arbitrary Executable File Formats File System Automount Point.
+<font color="#4E9A06">[  219.218162] </font><font color="#C4A000">systemd[1]</font>: Reached target User and Group Name Lookups.
+<font color="#4E9A06">[  219.218171] </font><font color="#C4A000">systemd[1]</font>: Reached target Remote File Systems.
+<font color="#4E9A06">[  219.218182] </font><font color="#C4A000">systemd[1]</font>: Reached target Slices.
+<font color="#4E9A06">[  219.218192] </font><font color="#C4A000">systemd[1]</font>: Reached target Swap.
+<font color="#4E9A06">[  219.218246] </font><font color="#C4A000">systemd[1]</font>: Listening on Device-mapper event daemon FIFOs.
+<font color="#4E9A06">[  219.218531] </font><font color="#C4A000">systemd[1]</font>: Listening on LVM2 poll daemon socket.
+<font color="#4E9A06">[  219.218620] </font><font color="#C4A000">systemd[1]</font>: Listening on Syslog Socket.
+<font color="#4E9A06">[  219.218655] </font><font color="#C4A000">systemd[1]</font>: Listening on initctl Compatibility Named Pipe.
+<font color="#4E9A06">[  219.218878] </font><font color="#C4A000">systemd[1]</font>: Listening on Journal Audit Socket.
+<font color="#4E9A06">[  219.218936] </font><font color="#C4A000">systemd[1]</font>: Listening on Journal Socket (/dev/log).
+<font color="#4E9A06">[  219.219009] </font><font color="#C4A000">systemd[1]</font>: Listening on Journal Socket.
+<font color="#4E9A06">[  219.219082] </font><font color="#C4A000">systemd[1]</font>: Listening on udev Control Socket.
+<font color="#4E9A06">[  219.219132] </font><font color="#C4A000">systemd[1]</font>: Listening on udev Kernel Socket.
+<font color="#4E9A06">[  219.219683] </font><font color="#C4A000">systemd[1]</font>: Mounting Huge Pages File System...
+<font color="#4E9A06">[  219.220349] </font><font color="#C4A000">systemd[1]</font>: Mounting POSIX Message Queue File System...
+<font color="#4E9A06">[  219.221057] </font><font color="#C4A000">systemd[1]</font>: Mounting Kernel Debug File System...
+<font color="#4E9A06">[  219.221775] </font><font color="#C4A000">systemd[1]</font>: Mounting Kernel Trace File System...
+<font color="#4E9A06">[  219.222744] </font><font color="#C4A000">systemd[1]</font>: Starting Journal Service...
+<font color="#4E9A06">[  219.223382] </font><font color="#C4A000">systemd[1]</font>: Starting Availability of block devices...
+<font color="#4E9A06">[  219.224050] </font><font color="#C4A000">systemd[1]</font>: Starting Set the console keyboard layout...
+<font color="#4E9A06">[  219.225857] </font><font color="#C4A000">systemd[1]</font>: Starting Create list of static device nodes for the current kernel...
+<font color="#4E9A06">[  219.226437] </font><font color="#C4A000">systemd[1]</font>: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+<font color="#4E9A06">[  219.226465] </font><font color="#C4A000">systemd[1]</font>: Condition check resulted in Load Kernel Module drm being skipped.
+<font color="#4E9A06">[  219.228388] </font><font color="#C4A000">systemd[1]</font>: Condition check resulted in Set Up Additional Binary Formats being skipped.
+<font color="#4E9A06">[  219.230758] </font><font color="#C4A000">systemd[1]</font>: Starting Load Kernel Modules...
+<font color="#4E9A06">[  219.231454] </font><font color="#C4A000">systemd[1]</font>: Starting Remount Root and Kernel File Systems...
+<font color="#4E9A06">[  219.232483] </font><font color="#C4A000">systemd[1]</font>: Starting udev Coldplug all Devices...
+<font color="#4E9A06">[  219.233199] </font><font color="#C4A000">systemd[1]</font>: Starting Uncomplicated firewall...
+<font color="#4E9A06">[  219.234733] </font><font color="#C4A000">systemd[1]</font>: Mounted Huge Pages File System.
+<font color="#4E9A06">[  219.234944] </font><font color="#C4A000">systemd[1]</font>: Mounted POSIX Message Queue File System.
+<font color="#4E9A06">[  219.235104] </font><font color="#C4A000">systemd[1]</font>: Mounted Kernel Debug File System.
+<font color="#4E9A06">[  219.235369] </font><font color="#C4A000">systemd[1]</font>: Mounted Kernel Trace File System.
+<font color="#4E9A06">[  219.235882] </font><font color="#C4A000">systemd[1]</font>: Finished Availability of block devices.
+<font color="#4E9A06">[  219.236361] </font><font color="#C4A000">systemd[1]</font>: Finished Create list of static device nodes for the current kernel.
+<font color="#4E9A06">[  219.240671] </font><font color="#C4A000">systemd[1]</font>: Finished Uncomplicated firewall.
+<font color="#4E9A06">[  219.242060] </font><font color="#C4A000">systemd[1]</font>: Finished Remount Root and Kernel File Systems.
+<font color="#4E9A06">[  219.245553] </font><font color="#C4A000">systemd[1]</font>: Condition check resulted in Rebuild Hardware Database being skipped.
+<font color="#4E9A06">[  219.245612] </font><font color="#C4A000">systemd[1]</font>: Condition check resulted in Platform Persistent Storage Archival being skipped.
+<font color="#4E9A06">[  219.246466] </font><font color="#C4A000">systemd[1]</font>: Starting Create System Users...
+<font color="#4E9A06">[  219.257071] </font><font color="#C4A000">lp</font>: driver loaded but no devices found
+<font color="#4E9A06">[  219.260236] </font><font color="#C4A000">systemd[1]</font>: Finished Create System Users.
+<font color="#4E9A06">[  219.261274] </font><font color="#C4A000">systemd[1]</font>: Starting Create Static Device Nodes in /dev...
+<font color="#4E9A06">[  219.262184] </font><font color="#C4A000">ppdev</font>: user-space parallel port driver
+<font color="#4E9A06">[  219.269951] </font><font color="#C4A000">systemd[1]</font>: Finished Load Kernel Modules.
+<font color="#4E9A06">[  219.271207] </font><font color="#C4A000">systemd[1]</font>: Mounting FUSE Control File System...
+<font color="#4E9A06">[  219.272290] </font><font color="#C4A000">systemd[1]</font>: Mounting Kernel Configuration File System...
+<font color="#4E9A06">[  219.273200] </font><font color="#C4A000">systemd[1]</font>: Starting Apply Kernel Variables...
+<font color="#4E9A06">[  219.275661] </font><font color="#C4A000">systemd[1]</font>: Finished Create Static Device Nodes in /dev.
+<font color="#4E9A06">[  219.275922] </font><font color="#C4A000">systemd[1]</font>: Mounted FUSE Control File System.
+<font color="#4E9A06">[  219.276106] </font><font color="#C4A000">systemd[1]</font>: Mounted Kernel Configuration File System.
+<font color="#4E9A06">[  219.277116] </font><font color="#C4A000">systemd[1]</font>: Starting udev Kernel Device Manager...
+<font color="#4E9A06">[  219.293183] </font><font color="#C4A000">systemd[1]</font>: Finished Apply Kernel Variables.
+<font color="#4E9A06">[  219.301725] </font><font color="#C4A000">systemd[1]</font>: Finished Set the console keyboard layout.
+<font color="#4E9A06">[  219.313858] </font><font color="#C4A000">systemd[1]</font>: Started Journal Service.
+<font color="#4E9A06">[  219.318807] </font><font color="#C4A000">systemd-journald[1390]</font>: Received client request to flush runtime journal.
+<font color="#4E9A06">[  219.501021] </font><font color="#C4A000">input</font>: Intel HID events as /devices/platform/INT33D5:00/input/input11
+<font color="#4E9A06">[  219.501204] </font><font color="#C4A000">intel-hid INT33D5:00</font>: platform supports 5 button array
+<font color="#4E9A06">[  219.501238] </font><font color="#C4A000">input</font>: Intel HID 5 button array as /devices/platform/INT33D5:00/input/input12
+<font color="#4E9A06">[  219.575927] </font><font color="#C4A000">mei_me 0000:00:16.0</font>: enabling device (0000 -&gt; 0002)
+<font color="#4E9A06">[  219.580284] </font><font color="#C4A000">intel_rapl_common</font>: Found RAPL domain package
+<font color="#4E9A06">[  219.580286] </font><font color="#C4A000">intel_rapl_common</font>: Found RAPL domain dram
+<font color="#4E9A06">[  219.580939] </font><font color="#C4A000">proc_thermal 0000:00:04.0</font>: Creating sysfs group for PROC_THERMAL_PCI
+<font color="#4E9A06">[  219.599989] </font><font color="#C4A000">mc</font>: Linux media interface: v0.10
+<font color="#4E9A06">[  219.611158] </font><font color="#C4A000">cfg80211</font>: Loading compiled-in X.509 certificates for regulatory database
+<font color="#4E9A06">[  219.629813] </font><font color="#C4A000">cfg80211</font>: Loaded X.509 cert &apos;sforshee: 00b28ddf47aef9cea7&apos;
+<font color="#4E9A06">[  219.633772] </font><font color="#C4A000">Bluetooth</font>: Core ver 2.22
+<font color="#4E9A06">[  219.633790] </font><font color="#C4A000">NET</font>: Registered protocol family 31
+<font color="#4E9A06">[  219.633791] </font><font color="#C4A000">Bluetooth</font>: HCI device and connection manager initialized
+<font color="#4E9A06">[  219.633800] </font><font color="#C4A000">Bluetooth</font>: HCI socket layer initialized
+<font color="#4E9A06">[  219.633803] </font><font color="#C4A000">Bluetooth</font>: L2CAP socket layer initialized
+<font color="#4E9A06">[  219.633806] </font><font color="#C4A000">Bluetooth</font>: SCO socket layer initialized
+<font color="#4E9A06">[  219.634009] </font><font color="#C4A000">dcdbas dcdbas</font>: Dell Systems Management Base Driver (version 5.6.0-3.3)
+<font color="#4E9A06">[  219.639408] </font><font color="#C4A000">RAPL PMU</font>: API unit is 2^-32 Joules, 4 fixed counters, 655360 ms ovfl timer
+<font color="#4E9A06">[  219.639410] </font><font color="#C4A000">RAPL PMU</font>: hw unit of domain pp0-core 2^-14 Joules
+<font color="#4E9A06">[  219.639410] </font><font color="#C4A000">RAPL PMU</font>: hw unit of domain package 2^-14 Joules
+<font color="#4E9A06">[  219.639410] </font><font color="#C4A000">RAPL PMU</font>: hw unit of domain dram 2^-14 Joules
+<font color="#4E9A06">[  219.639411] </font><font color="#C4A000">RAPL PMU</font>: hw unit of domain pp1-gpu 2^-14 Joules
+<font color="#4E9A06">[  219.641189] </font><font color="#C4A000">input</font>: Dell WMI hotkeys as /devices/platform/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input13
+<font color="#4E9A06">[  219.641253] </font><font color="#C4A000">videodev</font>: Linux video capture interface: v2.00
+<font color="#4E9A06">[  219.662103] </font>Intel(R) Wireless WiFi driver for Linux
+<font color="#4E9A06">[  219.662104] </font>Copyright(c) 2003- 2015 Intel Corporation
+<font color="#4E9A06">[  219.685793] </font><font color="#C4A000">iwlwifi 0000:02:00.0</font>: Found debug destination: EXTERNAL_DRAM
+<font color="#4E9A06">[  219.685795] </font><font color="#C4A000">iwlwifi 0000:02:00.0</font>: Found debug configuration: 0
+<font color="#4E9A06">[  219.685978] </font><font color="#C4A000">iwlwifi 0000:02:00.0</font>: loaded firmware version 29.1654887522.0 op_mode iwlmvm
+<font color="#4E9A06">[  219.748377] </font><font color="#C4A000">uvcvideo</font>: Found UVC 1.00 device Integrated_Webcam_HD (0c45:6a06)
+<font color="#4E9A06">[  219.755522] </font><font color="#C4A000">input</font>: DLL0798:00 06CB:7E92 Mouse as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL0798:00/0018:06CB:7E92.0001/input/input14
+<font color="#4E9A06">[  219.755608] </font><font color="#C4A000">input</font>: DLL0798:00 06CB:7E92 Touchpad as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL0798:00/0018:06CB:7E92.0001/input/input15
+<font color="#4E9A06">[  219.755667] </font><font color="#C4A000">hid-multitouch 0018:06CB:7E92.0001</font>: input,hidraw0: I2C HID v1.00 Mouse [DLL0798:00 06CB:7E92] on i2c-DLL0798:00
+<font color="#4E9A06">[  219.760396] </font><font color="#C4A000">uvcvideo 1-12:1.0</font><b>: Entity type for entity Extension 4 was not initialized!</b>
+<font color="#4E9A06">[  219.760398] </font><font color="#C4A000">uvcvideo 1-12:1.0</font><b>: Entity type for entity Extension 3 was not initialized!</b>
+<font color="#4E9A06">[  219.760399] </font><font color="#C4A000">uvcvideo 1-12:1.0</font><b>: Entity type for entity Processing 2 was not initialized!</b>
+<font color="#4E9A06">[  219.760401] </font><font color="#C4A000">uvcvideo 1-12:1.0</font><b>: Entity type for entity Camera 1 was not initialized!</b>
+<font color="#4E9A06">[  219.761369] </font><font color="#C4A000">input</font>: Integrated_Webcam_HD: Integrate as /devices/pci0000:00/0000:00:14.0/usb1/1-12/1-12:1.0/input/input17
+<font color="#4E9A06">[  219.761429] </font><font color="#C4A000">usbcore</font>: registered new interface driver uvcvideo
+<font color="#4E9A06">[  219.761430] </font>USB Video Class driver (1.1.1)
+<font color="#4E9A06">[  219.765910] </font><font color="#C4A000">usbcore</font>: registered new interface driver btusb
+<font color="#4E9A06">[  219.783454] </font><font color="#C4A000">Bluetooth</font>: hci0: read Intel version: 370810011003110e00
+<font color="#4E9A06">[  219.787010] </font><font color="#C4A000">Bluetooth</font>: hci0: Intel Bluetooth firmware file: intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq
+<font color="#4E9A06">[  219.824971] </font><font color="#C4A000">iwlwifi 0000:02:00.0</font>: Detected Intel(R) Dual Band Wireless AC 3165, REV=0x210
+<font color="#4E9A06">[  219.839502] </font><font color="#C4A000">iwlwifi 0000:02:00.0</font>: Applying debug destination EXTERNAL_DRAM
+<font color="#4E9A06">[  219.839944] </font><font color="#C4A000">iwlwifi 0000:02:00.0</font>: Allocated 0x00400000 bytes for firmware monitor.
+<font color="#4E9A06">[  219.845587] </font><font color="#C4A000">iwlwifi 0000:02:00.0</font>: base HW address: 7c:67:a2:b4:f2:49
+<font color="#4E9A06">[  219.883528] </font><font color="#C4A000">intel_rapl_common</font>: Found RAPL domain package
+<font color="#4E9A06">[  219.883529] </font><font color="#C4A000">intel_rapl_common</font>: Found RAPL domain core
+<font color="#4E9A06">[  219.883530] </font><font color="#C4A000">intel_rapl_common</font>: Found RAPL domain uncore
+<font color="#4E9A06">[  219.883531] </font><font color="#C4A000">intel_rapl_common</font>: Found RAPL domain dram
+<font color="#4E9A06">[  219.885416] </font><font color="#C4A000">mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04</font>: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+<font color="#4E9A06">[  219.913481] </font><font color="#C4A000">ieee80211 phy0</font>: Selected rate control algorithm &apos;iwl-mvm-rs&apos;
+<font color="#4E9A06">[  219.914440] </font><font color="#C4A000">thermal thermal_zone9</font><b>: failed to read out thermal zone (-61)</b>
+<font color="#4E9A06">[  219.919485] </font><font color="#C4A000">iwlwifi 0000:02:00.0 wlp2s0</font>: renamed from wlan0
+<font color="#4E9A06">[  219.952861] </font><font color="#C4A000">snd_hda_intel 0000:00:1f.3</font>: DSP detected with PCI class/subclass/prog-if info 0x040380
+<font color="#4E9A06">[  219.953054] </font><font color="#C4A000">snd_hda_intel 0000:00:1f.3</font>: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])
+<font color="#4E9A06">[  219.981495] </font><font color="#C4A000">Bluetooth</font><font color="#CC0000">: hci0: unexpected event for opcode 0xfc2f</font>
+<font color="#4E9A06">[  219.998435] </font><font color="#C4A000">Bluetooth</font>: hci0: Intel firmware patch completed and activated
+<font color="#4E9A06">[  220.030251] </font><font color="#C4A000">snd_hda_codec_realtek hdaudioC0D0</font>: autoconfig for ALC3246: line_outs=2 (0x14/0x1b/0x0/0x0/0x0) type:speaker
+<font color="#4E9A06">[  220.030253] </font><font color="#C4A000">snd_hda_codec_realtek hdaudioC0D0</font>:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+<font color="#4E9A06">[  220.030254] </font><font color="#C4A000">snd_hda_codec_realtek hdaudioC0D0</font>:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+<font color="#4E9A06">[  220.030255] </font><font color="#C4A000">snd_hda_codec_realtek hdaudioC0D0</font>:    mono: mono_out=0x0
+<font color="#4E9A06">[  220.030255] </font><font color="#C4A000">snd_hda_codec_realtek hdaudioC0D0</font>:    inputs:
+<font color="#4E9A06">[  220.030256] </font><font color="#C4A000">snd_hda_codec_realtek hdaudioC0D0</font>:      Headset Mic=0x19
+<font color="#4E9A06">[  220.030257] </font><font color="#C4A000">snd_hda_codec_realtek hdaudioC0D0</font>:      Headphone Mic=0x1a
+<font color="#4E9A06">[  220.030258] </font><font color="#C4A000">snd_hda_codec_realtek hdaudioC0D0</font>:      Internal Mic=0x12
+<font color="#4E9A06">[  220.083448] </font><font color="#C4A000">input</font>: HDA Intel PCH Headphone Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input18
+<font color="#4E9A06">[  220.105998] </font><font color="#C4A000">zlua</font><b>: loading out-of-tree module taints kernel.</b>
+<font color="#4E9A06">[  220.106000] </font><font color="#C4A000">zlua</font><b>: module license &apos;MIT&apos; taints kernel.</b>
+<font color="#4E9A06">[  220.106000] </font><b>Disabling lock debugging due to kernel taint</b>
+<font color="#4E9A06">[  222.082322] </font><font color="#C4A000">ZFS</font>: Loaded module v0.8.3-1ubuntu12.1, ZFS pool version 5000, ZFS filesystem version 5
+<font color="#4E9A06">[  222.574334] </font><font color="#C4A000">Bluetooth</font>: BNEP (Ethernet Emulation) ver 1.3
+<font color="#4E9A06">[  222.574336] </font><font color="#C4A000">Bluetooth</font>: BNEP filters: protocol multicast
+<font color="#4E9A06">[  222.574338] </font><font color="#C4A000">Bluetooth</font>: BNEP socket layer initialized
+<font color="#4E9A06">[  222.590900] </font><font color="#C4A000">NET</font>: Registered protocol family 38
+<font color="#4E9A06">[  222.872520] </font><font color="#C4A000">Generic FE-GE Realtek PHY r8169-100:00</font>: attached PHY driver [Generic FE-GE Realtek PHY] (mii_bus:phy_addr=r8169-100:00, irq=IGNORE)
+<font color="#4E9A06">[  222.986893] </font><font color="#C4A000">r8169 0000:01:00.0 enp1s0</font>: Link is Down
+<font color="#4E9A06">[  223.002729] </font><font color="#C4A000">iwlwifi 0000:02:00.0</font>: Applying debug destination EXTERNAL_DRAM
+<font color="#4E9A06">[  223.086973] </font><font color="#C4A000">iwlwifi 0000:02:00.0</font>: Applying debug destination EXTERNAL_DRAM
+<font color="#4E9A06">[  223.088295] </font><font color="#C4A000">iwlwifi 0000:02:00.0</font><b>: FW already configured (0) - re-configuring</b>
+<font color="#4E9A06">[  223.570778] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708239.384:2): apparmor=&quot;STATUS&quot; operation=&quot;profile_load&quot; profile=&quot;unconfined&quot; name=&quot;/usr/lib/snapd/snap-confine&quot; pid=2038 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  223.570899] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708239.384:3): apparmor=&quot;STATUS&quot; operation=&quot;profile_load&quot; profile=&quot;unconfined&quot; name=&quot;/usr/lib/snapd/snap-confine//mount-namespace-capture-helper&quot; pid=2038 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  225.862890] </font><font color="#C4A000">Bluetooth</font>: RFCOMM TTY layer initialized
+<font color="#4E9A06">[  225.862898] </font><font color="#C4A000">Bluetooth</font>: RFCOMM socket layer initialized
+<font color="#4E9A06">[  225.862902] </font><font color="#C4A000">Bluetooth</font>: RFCOMM ver 1.11
+<font color="#4E9A06">[  231.342574] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708247.156:4): apparmor=&quot;STATUS&quot; operation=&quot;profile_load&quot; profile=&quot;unconfined&quot; name=&quot;/snap/snapd/8542/usr/lib/snapd/snap-confine&quot; pid=4043 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  231.342713] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708247.156:5): apparmor=&quot;STATUS&quot; operation=&quot;profile_load&quot; profile=&quot;unconfined&quot; name=&quot;/snap/snapd/8542/usr/lib/snapd/snap-confine//mount-namespace-capture-helper&quot; pid=4043 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  259.838484] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708275.652:6): apparmor=&quot;STATUS&quot; operation=&quot;profile_replace&quot; profile=&quot;unconfined&quot; name=&quot;/snap/snapd/8542/usr/lib/snapd/snap-confine&quot; pid=4182 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  259.893961] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708275.708:7): apparmor=&quot;STATUS&quot; operation=&quot;profile_replace&quot; profile=&quot;unconfined&quot; name=&quot;/snap/snapd/8542/usr/lib/snapd/snap-confine//mount-namespace-capture-helper&quot; pid=4182 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  263.728994] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708279.540:8): apparmor=&quot;STATUS&quot; operation=&quot;profile_load&quot; profile=&quot;unconfined&quot; name=&quot;snap-update-ns.snap-store&quot; pid=4614 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  263.750638] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708279.564:9): apparmor=&quot;STATUS&quot; operation=&quot;profile_load&quot; profile=&quot;unconfined&quot; name=&quot;snap.snap-store.ubuntu-software-local-file&quot; pid=4617 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  263.768159] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708279.580:10): apparmor=&quot;STATUS&quot; operation=&quot;profile_load&quot; profile=&quot;unconfined&quot; name=&quot;snap.snap-store.snap-store&quot; pid=4615 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  263.768565] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708279.580:11): apparmor=&quot;STATUS&quot; operation=&quot;profile_load&quot; profile=&quot;unconfined&quot; name=&quot;snap.snap-store.ubuntu-software&quot; pid=4616 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  264.167766] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708279.980:12): apparmor=&quot;STATUS&quot; operation=&quot;profile_replace&quot; info=&quot;same as current profile, skipping&quot; profile=&quot;unconfined&quot; name=&quot;/snap/snapd/8542/usr/lib/snapd/snap-confine&quot; pid=4641 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  264.167768] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708279.980:13): apparmor=&quot;STATUS&quot; operation=&quot;profile_replace&quot; info=&quot;same as current profile, skipping&quot; profile=&quot;unconfined&quot; name=&quot;/snap/snapd/8542/usr/lib/snapd/snap-confine//mount-namespace-capture-helper&quot; pid=4641 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  264.535739] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708280.348:14): apparmor=&quot;STATUS&quot; operation=&quot;profile_replace&quot; profile=&quot;unconfined&quot; name=&quot;snap.snap-store.snap-store&quot; pid=4644 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  264.613307] </font><font color="#C4A000">audit</font>: type=1400 audit(1611708280.424:15): apparmor=&quot;STATUS&quot; operation=&quot;profile_replace&quot; profile=&quot;unconfined&quot; name=&quot;snap.snap-store.ubuntu-software-local-file&quot; pid=4646 comm=&quot;apparmor_parser&quot;
+<font color="#4E9A06">[  280.320898] </font><font color="#C4A000">rfkill</font>: input handler disabled</pre>
